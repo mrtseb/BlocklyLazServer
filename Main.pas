@@ -60,10 +60,14 @@ procedure TForm1.IdHTTPServer1CommandGet(AContext: TIdContext;
   ARequestInfo: TIdHTTPRequestInfo; AResponseInfo: TIdHTTPResponseInfo);
 
 var s,t,postData,sParent,sParent2:string;
+    code:TstringList;
     f:file;
+    i:integer;
+    mustUpload,fn,lang:string;
     ThisMoment:TdateTime;
     mem:Tmemorystream;
 begin
+  code:=Tstringlist.create;
   case ARequestInfo.Command of
    //sert les pages blockly html/js/images
   'GET':
@@ -72,7 +76,6 @@ begin
     s:=copy(ARequestInfo.Document,2,length(ARequestInfo.Document)-1);
     //if pos('favicon',s)>0 then exit;
     if trim(s)='' then s:='index.html';
-
     AResponseInfo.ResponseNo := 200;
     if pos('.html',s)>0 then AResponseInfo.ContentType := 'text/html';
     if pos('.png',s)>0 then AResponseInfo.ContentType := 'image/png';
@@ -92,49 +95,58 @@ begin
         mem.free;
     end;
     end;
-
-
   end;
   'POST':
   begin
        self.Memo1.Clear;
-
+       //self.Memo1.lines.add(ARequestInfo.RawHTTPCommand);
+       //self.Memo1.lines.add(ARequestInfo.RawHeaders.CommaText);
        //self.Memo1.lines.Add(ARequestInfo.RawHeaders.CommaText);
-
+    try
        ARequestInfo.PostStream.Position := 0;
        SetLength(postData, ARequestInfo.PostStream.Size);
        ARequestInfo.PostStream.Read(Pointer(postData)^, Length(postData));
        self.Memo1.lines.AddText(postData);
+
+       mustUpload:=self.Memo1.Lines[3];
+       fn:=self.Memo1.Lines[7];
+       lang:=self.Memo1.Lines[11];
+       fn:=fn+'.'+lang;
+
        t:=MD5Print(md5String(FormatDateTime('ddmmYYYY h:m:s',ThisMoment)));
        s:=ExtractFilePath(ParamStr(0));
-       sParent := IncludeTrailingPathDelimiter(s) + '..' + PathDelim; // Make parent path for executable
-       sParent2 := ExpandFileName(sParent);
 
-       s:=ExpandFilename(sParent2)+'Arduino\ino\default.ino';
-       //if fileexists(s) then deletefile(s);
-       self.memo1.lines.SaveToFile(s);
+       if mustUpload='false' then s:=s+'examples\'+lang+'\'+fn else
+       begin
+         sParent := IncludeTrailingPathDelimiter(s) + '..' + PathDelim; // Make parent path for executable
+         sParent2 := ExpandFileName(sParent);
+         s:=ExpandFilename(sParent2)+'Arduino\ino\default.ino';
+       end;
+       if fileexists(s) then deletefile(s);
+       for i:=15 to self.Memo1.Lines.Count-2 do code.Add(memo1.lines[i]);
+       code.SaveToFile(s);
+       if mustUpload='false' then exit;
+       //pour le reste on uploade !
        if self.ComboBox1.items.Count<1 then begin
           memo1.lines.add('Il faut brancher la carte SVP!');
-           exit;
+          exit;
        end;
 
-
-         execute('cmd /c cd '+ExpandFilename(sParent2)+'\Arduino'+ ' & .\bat\compilHEX.bat',handler,true,nil);
-         s:= 'cmd /c cd '+ExpandFilename(sParent2)+'\Arduino'+ ' & .\bat\uploadHEX.bat '+FPort;
-         memo1.lines.add(s);
-         if FPort<> '' then execute(s,handler,true,nil);
+       execute('cmd /c cd '+ExpandFilename(sParent2)+'\Arduino'+ ' & .\bat\compilHEX.bat',handler,true,nil);
+       s:= 'cmd /c cd '+ExpandFilename(sParent2)+'\Arduino'+ ' & .\bat\uploadHEX.bat '+FPort;
+       memo1.lines.add(s);
+       if FPort<> '' then execute(s,handler,true,nil);
        //AResponseInfo.ContentType := 'text/plain';
        AResponseInfo.ResponseNo := 200;
-    try
-        AResponseInfo.ContentStream:=TMemoryStream.Create;
-        AResponseInfo.ContentStream.Position := 0;
-        AResponseInfo.WriteContent;
+       AResponseInfo.ContentStream:=TMemoryStream.Create;
+       AResponseInfo.ContentStream.Position := 0;
+       AResponseInfo.WriteContent;
     finally
         AResponseInfo.ContentStream := nil;
+        code.free;
     end;
-  end;
-
-  end;
+  end; //end post
+end;//end case
 end;
 
 procedure TForm1.IdleTimer1Timer(Sender: TObject);
@@ -168,7 +180,7 @@ end;
 procedure TForm1.Button1Click(Sender: TObject);
 begin
   self.IdHTTPServer1.Active:=true;
-  self.Chromium1.Load(Utf8Decode('http://127.0.0.1:8080/'));
+  self.Chromium1.Load(Utf8Decode('http://127.0.0.1:8080/apps/blocklyduino/index.html'));
 end;
 
 procedure TForm1.ComboBox1Change(Sender: TObject);

@@ -7,5 +7,5 @@ del /s /q *.ppu
 del /s /q *.bak
 del /s /q *.obj
 
-strip.exe BlocklyLazServer.exe
+..\strip.exe BlocklyLazServer.exe
 

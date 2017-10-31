@@ -1,0 +1,131 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="variables_set" id="105" x="113" y="13">
+    <field name="VAR">in1</field>
+    <value name="VALUE">
+      <block type="inout_analog_read" id="106">
+        <field name="PIN">A0</field>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="107">
+        <field name="VAR">in2</field>
+        <value name="VALUE">
+          <block type="inout_analog_read" id="108">
+            <field name="PIN">A3</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id="109">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+              <block type="logic_operation" id="110">
+                <field name="OP">AND</field>
+                <value name="A">
+                  <block type="logic_compare" id="111">
+                    <field name="OP">GTE</field>
+                    <value name="A">
+                      <block type="variables_get" id="112">
+                        <field name="VAR">in1</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="113">
+                        <field name="NUM">1000</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_compare" id="114">
+                    <field name="OP">GTE</field>
+                    <value name="A">
+                      <block type="variables_get" id="115">
+                        <field name="VAR">in2</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="116">
+                        <field name="NUM">1000</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="grove_relay" id="117">
+                <field name="PIN">5</field>
+                <field name="STAT">HIGH</field>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="grove_relay" id="118">
+                <field name="PIN">5</field>
+                <field name="STAT">LOW</field>
+              </block>
+            </statement>
+            <next>
+              <block type="variables_set" id="119">
+                <field name="VAR">temp</field>
+                <value name="VALUE">
+                  <block type="grove_dht11" id="120">
+                    <field name="PIN">4</field>
+                    <field name="MESURE">temp</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="121">
+                    <field name="VAR">hum</field>
+                    <value name="VALUE">
+                      <block type="grove_dht11" id="122">
+                        <field name="PIN">4</field>
+                        <field name="MESURE">hum</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="grove_serial_lcd_iic" id="130">
+                        <value name="TEXT">
+                          <block type="text2" id="133">
+                            <value name="TXT1">
+                              <block type="text" id="143">
+                                <field name="TEXT">TEMP:</field>
+                              </block>
+                            </value>
+                            <value name="TXT2">
+                              <block type="variables_get" id="156">
+                                <field name="VAR">temp</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="TEXT2">
+                          <block type="text2" id="134">
+                            <value name="TXT1">
+                              <block type="text" id="144">
+                                <field name="TEXT">HUM.:</field>
+                              </block>
+                            </value>
+                            <value name="TXT2">
+                              <block type="variables_get" id="155">
+                                <field name="VAR">hum</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="DELAY_TIME">
+                          <block type="math_number" id="140">
+                            <field name="NUM">500</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

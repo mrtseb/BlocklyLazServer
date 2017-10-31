@@ -2,14 +2,7 @@
  * Execute the user's code.
  * Just a quick and dirty eval.  No checks for infinite loops, etc.
  */
-function runJS() {
-  var code = Blockly.Generator.workspaceToCode('JavaScript');
-  try {
-    eval(code);
-  } catch (e) {
-    alert('Program error:\n' + e);
-  }
-}
+
 
 /**
  * Backup code blocks to localStorage.
@@ -38,8 +31,9 @@ function saveCode() {
   var fileName = window.prompt('What would you like to name your file?', 'BlocklyDuino')
   //doesn't save if the user quits the save prompt
   if(fileName){
+	var code = Blockly.Arduino.workspaceToCode();
     var blob = new Blob([Blockly.Arduino.workspaceToCode()], {type: 'text/plain;charset=utf-8'});
-    saveAs(blob, fileName + '.ino');
+    _saveAs(code, fileName ,"ino");
   }
 }
 
@@ -57,7 +51,7 @@ function save() {
   // saveAs(builder.getBlob('text/plain;charset=utf-8'), 'blockduino.xml');
   if(fileName){
     var blob = new Blob([data], {type: 'text/xml'});
-    saveAs(blob, fileName + ".xml");
+    _saveAs(data, fileName,"xml");
   } 
 }
 
@@ -166,7 +160,6 @@ function onSuccess() {
   if (ajax.readyState == 4) {
     if (ajax.status == 200) {
       try {
-	  alert(ajax.responseText);	  
       var xml = Blockly.Xml.textToDom(ajax.responseText);
       } catch (e) {
         alert('Error parsing XML:\n' + e);
@@ -198,7 +191,17 @@ function load_by_url(uri) {
 　　ajax.send ("");
 }
 
-function uploadCode(code, callback) {
+function _saveAs(code,file,ext){
+	uploadCode(code, function(status, errorInfo) {
+        if (status == 200) {
+            alert("Transfert  ok");
+        } else {
+            alert("Error transfert program: " + errorInfo);
+        }
+    } , false, file,ext);
+}
+
+function uploadCode(code, callback, must_upload = false, filename='default',lang='ino') {
     var target = document.getElementById('content_arduino');
     var spinner = new Spinner().spin(target);
 
@@ -245,7 +248,15 @@ function uploadCode(code, callback) {
 
     request.open(method, url, async);
     request.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
-    request.send(code);	     
+	 var fd = new FormData();
+     fd.append("must_upload", must_upload);
+	 fd.append("fn", filename);
+	 fd.append("ext", lang);
+	 fd.append("code", code);
+     // These extra params aren't necessary but show that you can include other data.
+     
+  
+    request.send(fd);	     
 }
 
 function uploadClick() {
@@ -259,15 +270,7 @@ function uploadClick() {
         } else {
             alert("Error uploading program: " + errorInfo);
         }
-    });
-}
-
-function infoClick() {
-    
-
-    
-    
-    
+    } , true);
 }
 
 function resetClick() {
