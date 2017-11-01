@@ -13,6 +13,7 @@ Ardublockly.TOOLBOX_ADDITIONAL_XML =
 '  <sep></sep>' +
 '  <category id="catGrove" name="Grove">' +
 '    <block type="grove_led"></block>' +
+'    <block type="grove_tilt_switch"></block>' +
 '    <block type="grove_relay"></block>' +
 '    <block type="grove_dht11"></block>' +
 '    <block type="grove_serial_lcd_iic"></block>' +

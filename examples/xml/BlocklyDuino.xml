@@ -1,1 +1,44 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="variables_set" id="N;BW-zyr?D#(nmi~tI4A" x="121" y="109">
+    <field name="VAR">txt</field>
+    <value name="VALUE">
+      <block type="variables_set_type" id="tYLk-gpGPxY/M|E0Mt*X">
+        <field name="VARIABLE_SETTYPE_TYPE">TEXT</field>
+        <value name="VARIABLE_SETTYPE_INPUT">
+          <block type="text" id="Le;zwC;0PcrqGzcMI/#4">
+            <field name="TEXT">Salut!</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="GH`hQZ:H-~?rFa3v.sdA">
+        <field name="VAR">txt2</field>
+        <value name="VALUE">
+          <block type="variables_set_type" id=";#Hc%XN79OmR6|~0R]op">
+            <field name="VARIABLE_SETTYPE_TYPE">TEXT</field>
+            <value name="VARIABLE_SETTYPE_INPUT">
+              <block type="text" id="x|4}LYzLx-3;}qJG?GQC">
+                <field name="TEXT">Etienne</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="grove_serial_lcd_iic" id="(w/u@sXlw(eT|eEOz?Fd">
+            <value name="TEXT">
+              <block type="variables_get" id="Vnza%n=H1)kEl_64VmoB">
+                <field name="VAR">txt</field>
+              </block>
+            </value>
+            <value name="TEXT2">
+              <block type="variables_get" id="[Y*L[3^^`ZpBatVLd@8M">
+                <field name="VAR">txt2</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

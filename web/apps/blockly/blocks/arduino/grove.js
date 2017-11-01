@@ -40,7 +40,7 @@ Blockly.Blocks['grove_led'] = {
     this.setColour(190);
     this.appendDummyInput()
         .appendField("LED")
-        .appendField(new Blockly.FieldImage("https://statics3.seeedstudio.com/images/product/groveblue%20white.jpg", 64, 64))
+        .appendField(new Blockly.FieldImage("../../media/devices/grove_led.jpg", 64, 64))
         .appendField("PIN#")
         .appendField(new Blockly.FieldDropdown(Blockly.Arduino.Boards.selected.digitalPins), "PIN")
         .appendField("stat")
@@ -101,7 +101,7 @@ Blockly.Blocks['grove_tilt_switch'] = {
     this.setColour(190);
     this.appendDummyInput()
         .appendField("Tilt Switch")
-        .appendField(new Blockly.FieldImage("https://statics3.seeedstudio.com/images/product/gbtlt.jpg", 64, 64))
+        .appendField(new Blockly.FieldImage("../../media/devices/grove_switch.jpg", 64, 64))
         .appendField("PIN#")
         .appendField(new Blockly.FieldDropdown(Blockly.Arduino.Boards.selected.digitalPins), "PIN");
     this.setOutput(true, 'Boolean');
@@ -192,11 +192,9 @@ Blockly.Blocks['grove_serial_lcd_iic'] = {
         .appendField("LCD I2C")
         .appendField(new Blockly.FieldImage("../../media/devices/grove_lcd.jpg", 64, 64));
     this.appendValueInput("TEXT", 'String')
-        .setCheck('String')
         .setAlign(Blockly.ALIGN_RIGHT)
         .appendField("ligne1");
     this.appendValueInput("TEXT2", 'String')
-        .setCheck('String')
         .setAlign(Blockly.ALIGN_RIGHT)
         .appendField("ligne2")
     this.appendValueInput("DELAY_TIME", 'Number')

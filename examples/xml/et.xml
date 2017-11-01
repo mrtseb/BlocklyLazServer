@@ -1,0 +1,82 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="variables_set" id=":Xk;W!%UyzQnyeTMyXbV" x="42" y="46">
+    <field name="VAR">in1</field>
+    <value name="VALUE">
+      <block type="variables_set_type" id="+Epi3=Y58ylIPu9f^XZ!">
+        <field name="VARIABLE_SETTYPE_TYPE">NUMBER</field>
+        <value name="VARIABLE_SETTYPE_INPUT">
+          <block type="grove_tilt_switch" id="e0q=}=jo|E#,MM]HF]63">
+            <field name="PIN">A0</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="@bmkQ8#^^AZq~Tc?*hr1">
+        <field name="VAR">in2</field>
+        <value name="VALUE">
+          <block type="variables_set_type" id="HIe)cFUSiN6y`q2:QzRY">
+            <field name="VARIABLE_SETTYPE_TYPE">NUMBER</field>
+            <value name="VARIABLE_SETTYPE_INPUT">
+              <block type="grove_tilt_switch" id="Tk?iYJV?nNZQ2ts!nBKQ">
+                <field name="PIN">A3</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id="y2PrjpMsf7eqKDNV2lxc">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+              <block type="logic_operation" id="ah;PT]O*w(8x4~O8r87+">
+                <field name="OP">AND</field>
+                <value name="A">
+                  <block type="logic_compare" id="jVX-%pEfL*BGY5BB7HWa">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="variables_get" id="NtK)E14CX_lV{sA^lTQv">
+                        <field name="VAR">in1</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="*/YqCMMzx[J)oL7Z5sRw">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_compare" id="[a4eMq#QnDxL:Ta[6GFS">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="variables_get" id="jv%ss:`[/Kk9anbPpl/L">
+                        <field name="VAR">in2</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="3Co#i)AE,b3H!(x8)#Ta">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="grove_relay" id="1x5FZT_I%h;7,Lord9En">
+                <field name="PIN">5</field>
+                <field name="STAT">HIGH</field>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="grove_relay" id="e)ZyY:p+,[y*)PH.q,k-">
+                <field name="PIN">5</field>
+                <field name="STAT">LOW</field>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
