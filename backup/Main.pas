@@ -116,7 +116,7 @@ begin
        t:=MD5Print(md5String(FormatDateTime('ddmmYYYY h:m:s',ThisMoment)));
        s:=ExtractFilePath(ParamStr(0));
 
-       if mustUpload='false' then s:=s+'examples\'+fn else
+       if mustUpload='false' then s:=s+'examples\'+lang+'\'+fn else
        begin
          sParent := IncludeTrailingPathDelimiter(s) + '..' + PathDelim; // Make parent path for executable
          sParent2 := ExpandFileName(sParent);
@@ -180,7 +180,7 @@ end;
 procedure TForm1.Button1Click(Sender: TObject);
 begin
   self.IdHTTPServer1.Active:=true;
-  self.Chromium1.Load(Utf8Decode('http://127.0.0.1:8080/apps/blocklyduino/index.html'));
+  self.Chromium1.Load(Utf8Decode('http://localhost:8080/apps/ardublockly/'));
 end;
 
 procedure TForm1.ComboBox1Change(Sender: TObject);

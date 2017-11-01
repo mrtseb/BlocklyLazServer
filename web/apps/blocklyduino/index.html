@@ -4,7 +4,13 @@
   <meta http-equiv="Cache-control" content="no-cache">
   <title>BlocklyDuino</title>
   
-  <script type="text/javascript" src="blockly_uncompressed.js"></script>
+  <script type="text/javascript" src="blockly_compressed.js"></script>
+  
+  <script type="text/javascript" src="blocks/Ardublockly/field_instance.js"></script>
+  <script type="text/javascript" src="blocks/Ardublockly/instances.js"></script>
+  <script type="text/javascript" src="blocks/Ardublockly/static_typing.js"></script>
+  <script type="text/javascript" src="blocks/Ardublockly/type.js"></script>
+  <script type="text/javascript" src="blocks/Ardublockly/types.js"></script>
   
   <script type="text/javascript" src="blocks/base.js"></script>
   <script type="text/javascript" src="blocks/colour.js"></script>
@@ -15,7 +21,7 @@
   <script type="text/javascript" src="blocks/math.js"></script>
   <script type="text/javascript" src="blocks/procedures.js"></script>
   <script type="text/javascript" src="blocks/text.js"></script>
-  <script type="text/javascript" src="blocks/variables.js"></script>
+  <script type="text/javascript" src="blocks/variables2.js"></script>
   
   <script type="text/javascript" src="generators/arduino.js"></script>
   <script type="text/javascript" src="generators/arduino/base.js"></script>
@@ -24,7 +30,7 @@
   <script type="text/javascript" src="generators/arduino/logic.js"></script>
   <script type="text/javascript" src="generators/arduino/math.js"></script>
   <script type="text/javascript" src="generators/arduino/procedures.js"></script>
-  <script type="text/javascript" src="generators/arduino/variables.js"></script>
+  <script type="text/javascript" src="generators/arduino/variables2.js"></script>
   <script type="text/javascript" src="generators/arduino/text.js"></script>
   
   <script type="text/javascript" src="msg/js/fr.js"></script>
@@ -388,7 +394,11 @@ function init() {
 	  <block type="text_append2"></block>
 	  
     </category>
-    <category name="Variables" custom="VARIABLE"></category>
+    <category name="Variables">
+	  <block type="var_set"></block>
+	  <block type="var_get"></block>
+	    
+	</category>
     <category name="Fonctions" custom="PROCEDURE"></category>
     <sep></sep>
     <category name="Entrées/Sorties">

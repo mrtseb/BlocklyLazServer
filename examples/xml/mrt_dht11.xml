@@ -1,0 +1,106 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="variables_set" id="2H[-@3SI_[=+7@Le%Wzs" x="15" y="8">
+    <field name="VAR">temp</field>
+    <value name="VALUE">
+      <block type="variables_set_type" id="TZ}VqMG6O)!)GdGUawAS">
+        <field name="VARIABLE_SETTYPE_TYPE">DECIMAL</field>
+        <value name="VARIABLE_SETTYPE_INPUT">
+          <block type="grove_dht11" id="qq_Sdj+y1X29DurH/D#o">
+            <field name="PIN">4</field>
+            <field name="MESURE">temp</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="ODfZCS%#s%oR%g5Dbs^j">
+        <field name="VAR">hum</field>
+        <value name="VALUE">
+          <block type="variables_set_type" id="zX0rJnv0C_pMFgW_vkUA">
+            <field name="VARIABLE_SETTYPE_TYPE">DECIMAL</field>
+            <value name="VARIABLE_SETTYPE_INPUT">
+              <block type="grove_dht11" id=",P=cG~~/yk8H[YNJgVii">
+                <field name="PIN">4</field>
+                <field name="MESURE">hum</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="Swu=+~=cR#Df|h5Ut#IP">
+            <field name="VAR">txt</field>
+            <value name="VALUE">
+              <block type="variables_set_type" id="df~XE(]:(-PA+51a=L%f">
+                <field name="VARIABLE_SETTYPE_TYPE">TEXT</field>
+                <value name="VARIABLE_SETTYPE_INPUT">
+                  <block type="text_join" id="*~~%]W5)Ui)SBcXM/uPP">
+                    <mutation items="3"></mutation>
+                    <value name="ADD0">
+                      <block type="text" id="##XykxI-1MQS.X+MdiwB">
+                        <field name="TEXT">T:</field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="variables_get" id="k##,HwnOCx|r7cS@Y;t%">
+                        <field name="VAR">temp</field>
+                      </block>
+                    </value>
+                    <value name="ADD2">
+                      <block type="text" id="MvGkj7Ridzgo[/^GekXP">
+                        <field name="TEXT"> C</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set" id=")6te|,Cs7Y-#VHu`CIoX">
+                <field name="VAR">txt2</field>
+                <value name="VALUE">
+                  <block type="variables_set_type" id=";~sUo+|?q0d=b]+J5uD!">
+                    <field name="VARIABLE_SETTYPE_TYPE">TEXT</field>
+                    <value name="VARIABLE_SETTYPE_INPUT">
+                      <block type="text_join" id=")*9,{PW)529ua9M6)V8K">
+                        <mutation items="3"></mutation>
+                        <value name="ADD0">
+                          <block type="text" id="I/q[lctnlNnlDl#Et@7q">
+                            <field name="TEXT">H:</field>
+                          </block>
+                        </value>
+                        <value name="ADD1">
+                          <block type="variables_get" id="BcD)Y%;]k~}[;j?m:Gry">
+                            <field name="VAR">hum</field>
+                          </block>
+                        </value>
+                        <value name="ADD2">
+                          <block type="text" id="SJbdL/Ug[`(`7DJrv8|{">
+                            <field name="TEXT"> %</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="grove_serial_lcd_iic" id="JzDq9%a)9Neu/uJ@Iy^d">
+                    <value name="TEXT">
+                      <block type="variables_get" id="n1:Xxe{Qb#xcQ5_sM`JZ">
+                        <field name="VAR">txt</field>
+                      </block>
+                    </value>
+                    <value name="TEXT2">
+                      <block type="variables_get" id=")PzgoB*-:B~j5d)@32qC">
+                        <field name="VAR">txt2</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

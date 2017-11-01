@@ -1,7 +1,0 @@
-[1031/140921.641:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
-[1031/140922.735:INFO:CONSOLE(0)] "Creating Application Cache with manifest http://127.0.0.1:8080/apps/blocklyduino/node.manifest", source: http://127.0.0.1:8080/apps/blocklyduino/index.html (0)
-[1031/140922.735:INFO:CONSOLE(0)] "Application Cache Checking event", source: http://127.0.0.1:8080/apps/blocklyduino/index.html (0)
-[1031/140922.736:INFO:CONSOLE(0)] "Application Cache Downloading event", source: http://127.0.0.1:8080/apps/blocklyduino/index.html (0)
-[1031/140922.761:INFO:CONSOLE(0)] "Application Cache Progress event (0 of 5) http://wiki.seeedstudio.com/images/4/4d/Smotoshield2.jpg", source: http://127.0.0.1:8080/apps/blocklyduino/index.html (0)
-[1031/140922.761:INFO:CONSOLE(0)] "Application Cache Error event: Resource fetch failed (6) http://wiki.seeedstudio.com/images/4/4d/Smotoshield2.jpg", source: http://127.0.0.1:8080/apps/blocklyduino/index.html (0)
-[1031/140922.801:INFO:CONSOLE(1877)] "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.", source: http://127.0.0.1:8080/apps/closure-library/closure/goog/base.js (1877)

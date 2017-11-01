@@ -180,7 +180,7 @@ end;
 procedure TForm1.Button1Click(Sender: TObject);
 begin
   self.IdHTTPServer1.Active:=true;
-  self.Chromium1.Load(Utf8Decode('http://127.0.0.1:8080/apps/blocklyduino/index.html'));
+  self.Chromium1.Load(Utf8Decode('http://localhost:8080/apps/ardublockly/index.html'));
 end;
 
 procedure TForm1.ComboBox1Change(Sender: TObject);
