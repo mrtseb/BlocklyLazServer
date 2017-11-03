@@ -17,6 +17,17 @@ Ardublockly.TOOLBOX_ADDITIONAL_XML =
 '    <block type="grove_relay"></block>' +
 '    <block type="grove_dht11"></block>' +
 '    <block type="grove_serial_lcd_iic"></block>' +
+'  </category>' +
+'  <sep></sep>' +
+'  <category id="catMbot" name="Mbot">' +
+'    <block type="mbot_init"></block>' +
+'    <block type="mbot_move"></block>' +
+'    <block type="mbot_conf_motor"></block>' +
+'    <block type="mbot_leds"></block>' +
+'    <block type="mbot_buzzer"></block>' +
+'    <block type="mbot_light"></block>' +
 '  </category>';
+
+
 
 Ardublockly.TOOLBOX_XML = Ardublockly.TOOLBOX_BEGIN_XML + Ardublockly.TOOLBOX_CORE_XML +  Ardublockly.TOOLBOX_ADDITIONAL_XML + Ardublockly.TOOLBOX_END_XML;

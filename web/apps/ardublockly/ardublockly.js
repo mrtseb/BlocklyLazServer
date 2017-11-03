@@ -34,14 +34,16 @@ Ardublockly.init = function() {
   }
 };
 
-function _saveAs(code,file,ext){
+function _saveAs(code,file,ext,must_upload=false){
 	uploadCode(code, function(status, errorInfo) {
         if (status == 200) {
             alert("Transfert  ok");
+			 Ardublockly.largeIdeButtonSpinner(false);
         } else {
             alert("Error transfert program: " + errorInfo);
+			Ardublockly.largeIdeButtonSpinner(false);
         }
-    } , true, file,ext);
+    } , must_upload, file,ext);
 }
 
 function uploadCode(code, callback, must_upload = false, filename='default',lang='ino') {
@@ -104,62 +106,51 @@ function uploadCode(code, callback, must_upload = false, filename='default',lang
 
 Ardublockly.doUpload = function() {
 	var arduinoCode = Ardublockly.generateArduino();
-	_saveAs(arduinoCode,'default','ino');
+	_saveAs(arduinoCode,'default','ino',true);
 };
 
+/**
+ * Creates an XML file containing the blocks from the Blockly workspace and
+ * prompts the users to save it into their local file system.
+ */
+Ardublockly.saveXmlFile = function() {
+  //Ardublockly.saveTextFileAs(
+  var filename = document.getElementById('sketch_name').value;
+  var xml = Ardublockly.generateXml();
+  _saveAs(xml,filename,'xml');
+};
+
+/**
+ * Creates an Arduino Sketch file containing the Arduino code generated from
+ * the Blockly workspace and prompts the users to save it into their local file
+ * system.
+ */
+Ardublockly.saveSketchFile = function() {
+   var filename = document.getElementById('sketch_name').value;
+   var ino =   Ardublockly.generateArduino();
+   _saveAs(ino,filename,'ino');
+  
+};
 
 /** Binds functions to each of the buttons, nav links, and related. */
 Ardublockly.bindActionFunctions = function() {
   // Navigation buttons
   Ardublockly.bindClick_('button_load', Ardublockly.loadUserXmlFile);
-  Ardublockly.bindClick_('button_save', Ardublockly.saveXmlFile);
+  Ardublockly.bindClick_('button_save_xml', Ardublockly.saveXmlFile);
+  Ardublockly.bindClick_('button_save_ino', Ardublockly.saveSketchFile);
   Ardublockly.bindClick_('button_delete', Ardublockly.discardAllBlocks);
   Ardublockly.bindClick_('button_upload', Ardublockly.doUpload);
 
-  // Side menu buttons, they also close the side menu
-  Ardublockly.bindClick_('menu_load', function() {
-    Ardublockly.loadUserXmlFile();
-    $('.button-collapse').sideNav('hide');
-  });
-  Ardublockly.bindClick_('menu_save', function() {
-    Ardublockly.saveXmlFile();
-    $('.button-collapse').sideNav('hide');
-  });
-  Ardublockly.bindClick_('menu_delete', function() {
-    Ardublockly.discardAllBlocks();
-    $('.button-collapse').sideNav('hide');
-  });
-  Ardublockly.bindClick_('menu_settings', function() {
-    Ardublockly.openSettings();
-    $('.button-collapse').sideNav('hide');
-  });
-  Ardublockly.bindClick_('menu_example_1', function() {
-    Ardublockly.loadServerXmlFile('../examples/blink.xml');
-    $('.button-collapse').sideNav('hide');
-  });
-  Ardublockly.bindClick_('menu_example_2', function() {
-    Ardublockly.loadServerXmlFile('../examples/serial_print_ascii.xml');
-    $('.button-collapse').sideNav('hide');
-  });
-  Ardublockly.bindClick_('menu_example_3', function() {
-    Ardublockly.loadServerXmlFile('../examples/serial_repeat_game.xml');
-    $('.button-collapse').sideNav('hide');
-  });
-  Ardublockly.bindClick_('menu_example_4', function() {
-    Ardublockly.loadServerXmlFile('../examples/servo_knob.xml');
-    $('.button-collapse').sideNav('hide');
-  });
-  Ardublockly.bindClick_('menu_example_5', function() {
-    Ardublockly.loadServerXmlFile('../examples/stepper_knob.xml');
-    $('.button-collapse').sideNav('hide');
-  });
+  
+  
 
   // Floating buttons
   Ardublockly.bindClick_('button_ide_large', function() {
     Ardublockly.ideButtonLargeAction();
+	Ardublockly.doUpload();
   });
   
-  Ardublockly.bindClick_('button_load_xml', Ardublockly.XmlTextareaToBlocks);
+  
   Ardublockly.bindClick_('button_toggle_toolbox', Ardublockly.toogleToolbox);
 
   // Settings modal input field listeners only if they can be edited
@@ -353,26 +344,7 @@ Ardublockly.loadUserXmlFile = function() {
   selectFile.click();
 };
 
-/**
- * Creates an XML file containing the blocks from the Blockly workspace and
- * prompts the users to save it into their local file system.
- */
-Ardublockly.saveXmlFile = function() {
-  Ardublockly.saveTextFileAs(
-      document.getElementById('sketch_name').value + '.xml',
-      Ardublockly.generateXml());
-};
 
-/**
- * Creates an Arduino Sketch file containing the Arduino code generated from
- * the Blockly workspace and prompts the users to save it into their local file
- * system.
- */
-Ardublockly.saveSketchFile = function() {
-  Ardublockly.saveTextFileAs(
-      document.getElementById('sketch_name').value + '.ino',
-      Ardublockly.generateArduino());
-};
 
 /**
  * Creates an text file with the input content and files name, and prompts the
@@ -806,6 +778,7 @@ Ardublockly.bindClick_ = function(el, func) {
     e.preventDefault();
     func();
   };
+  el.addEventListener('ontouchend', propagateOnce);
   el.addEventListener('ontouchend', propagateOnce);
   el.addEventListener('click', propagateOnce);
 };

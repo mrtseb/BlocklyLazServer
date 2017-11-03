@@ -31,6 +31,52 @@ Blockly.Arduino['text'] = function(block) {
   return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
+Blockly.Arduino['text_arduino'] = function(block) {
+  // Append to a variable in place.
+  var code='';
+  var dropdown_type = block.getFieldValue('TYPE');
+  var argument0 = Blockly.Arduino.valueToCode(block, 'TEXT',Blockly.Arduino.ORDER_UNARY_POSTFIX);
+  if (argument0 == '') {
+	//assurer les "" si vide
+    argument0 = '""';
+  } else {
+	//retire les "
+    argument0 = argument0.replace('"','');
+    argument0 = argument0.replace('"','');
+  }
+  
+  if (dropdown_type == 'SETUP') {
+	   Blockly.Arduino.setups_['setup_code'] = argument0 + '\n';	   
+  } else if (dropdown_type == 'INCLUDE') {
+	  Blockly.Arduino.definitions_['setup_code'] = argument0 + '\n';
+  } else code = argument0 + '\n';
+  
+  return code;
+};
+
+/*
+Blockly.Arduino['text_arduino'] = function(block) {
+  // Append to a variable in place.
+  //var varName = Blockly.Arduino.variableDB_.getName(block.getFieldValue('VAR'), Blockly.Variables.NAME_TYPE);
+  var dropdown_type = block.getFieldValue('TYPE');
+  var argument0 = Blockly.Arduino.valueToCode(block, 'TEXT',Blockly.Arduino.ORDER_UNARY_POSTFIX);
+  if (argument0 == '') {
+    argument0 = '""';
+  } else {
+    argument0 = argument0.replace('"','');
+    argument0 = argument0.replace('"','');
+  }
+  
+  var code;
+  
+  if (dropdown_type == 'SETUP') {
+	   Blockly.Arduino.setups_['setup_code'] = argument0 + '\n';	   
+  } else if (dropdown_type == 'INCLUDE') {
+	  Blockly.Arduino.definitions_['setup_code'] = argument0 + '\n';
+  } else code = argument0 + '\n';
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+*/
 /**
  * Code generator for a String concatenation (X...Y). This string can be made
  * up of any number of elements of any type.
@@ -75,10 +121,8 @@ Blockly.Arduino['text_join'] = function(block) {
  */
 Blockly.Arduino['text_append'] = function(block) {
   // Append to a variable in place.
-  var varName = Blockly.Arduino.variableDB_.getName(
-      block.getFieldValue('VAR'), Blockly.Variables.NAME_TYPE);
-  var argument0 = Blockly.Arduino.valueToCode(block, 'TEXT',
-      Blockly.Arduino.ORDER_UNARY_POSTFIX);
+  var varName = Blockly.Arduino.variableDB_.getName(block.getFieldValue('VAR'), Blockly.Variables.NAME_TYPE);
+  var argument0 = Blockly.Arduino.valueToCode(block, 'TEXT',Blockly.Arduino.ORDER_UNARY_POSTFIX);
   if (argument0 == '') {
     argument0 = '""';
   } else {

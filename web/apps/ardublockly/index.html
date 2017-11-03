@@ -33,11 +33,13 @@
   <script src="../blockly/blocks/arduino/time.js"></script>
   <script src="../blockly/blocks/arduino/tone.js"></script>
   <script src="../blockly/blocks/arduino/grove.js"></script>
+    <script src="../blockly/blocks/arduino/mbot.js"></script>
   <script src="../blockly/blocks/arduino/variables.js"></script>
   <script src="../blockly/generators/arduino.js"></script>
   <script src="../blockly/generators/arduino/boards.js"></script>
   <script src="../blockly/generators/arduino/io.js"></script>
   <script src="../blockly/generators/arduino/grove.js"></script>
+   <script src="../blockly/generators/arduino/mbot.js"></script>
   <script src="../blockly/generators/arduino/lists.js"></script>
   <script src="../blockly/generators/arduino/logic.js"></script>
   <script src="../blockly/generators/arduino/loops.js"></script>
@@ -54,7 +56,7 @@
   <script src="../blockly/generators/arduino/variables.js"></script>
 
   <!-- Default language js files, user selection appended to head on load -->
-  <script src="../blockly/msg/js/fr.js"></script>
+  <script src="../blockly/msg/js/fr2.js"></script>
   <script src="msg/fr.js"></script>
 </head>
 
@@ -74,7 +76,8 @@
       <!-- Horizontal Navbar links only shown on large resolutions -->
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="#" id="button_load"><span class="translatable_open">Ouvrir</span><i class="mdi-file-file-upload left"></i></a></li>
-        <li><a href="#" id="button_save"><span class="translatable_save">Enregistrer</span><i class="mdi-file-file-download left"></i></a></li>
+        <li><a href="#" id="button_save_xml"><span class="translatable_save">Enregistrer le XML</span><i class="mdi-file-file-download left"></i></a></li>
+		<li><a href="#" id="button_save_ino"><span class="translatable_save">Enregistrer le code Arduino</span><i class="mdi-file-file-download left"></i></a></li>
         <li><a href="#" id="button_delete"><span class="translatable_deleteAll">Tout effacer</span><i class="mdi-action-delete left"></i></a></li>
 		<li><a href="#" id="button_upload"><span class="translatable_deleteAll">Télédéverser</span><i class="mdi-file-file-upload left"></i></a></li>
       </ul>
@@ -86,12 +89,7 @@
     <li class="logo"><img src="img/sidenav_header.png" alt="Ardublockly block image"></li>
     <li class="no-padding">
       <ul>
-        <li id="menu_load"><a href="#"><span class="translatable_open">Open</span><i class="mdi-file-file-upload left"></i></a></li>
-        <li id="menu_save"><a href="#"><span class="translatable_save">Save</span><i class="mdi-file-file-download left"></i></a></li>
-        <li id="menu_delete"><a href="#"><span class="translatable_deleteAll">Delete All</span><i class="mdi-action-delete left"></i></a></li>
-        <li id="menu_settings"><a href="#"><span class="translatable_settings">Settings</span><i class="mdi-action-settings left"></i></a></li>
-        <li id="menu_bug"><a href="https://github.com/carlosperate/ardublockly/wiki" target="_blank"><span class="translatable_documentation">Documentation</span><i class="mdi-action-help left"></i></a></li>
-        <li id="menu_bug"><a href="http://github.com/carlosperate/ardublockly/issues" target="_blank"><span class="translatable_reportBug">Report Bug</span><i class="mdi-action-bug-report left"></i></a></li>
+        
       </ul>
     <li class="no-padding">
       <ul class="collapsible collapsible-accordion">
@@ -99,11 +97,7 @@
           <div class="collapsible-header"><span class="translatable_examples">Examples</span><i class="mdi-navigation-arrow-drop-down"></i></div>
           <div class="collapsible-body">
             <ul>
-              <li id="menu_example_1"><a href="#!">Blink</a></li>
-              <li id="menu_example_2"><a href="#!">Serial print</a></li>
-              <li id="menu_example_3"><a href="#!">Serial repeat game</a></li>
-              <li id="menu_example_4"><a href="#!">Servo knob</a></li>
-              <li id="menu_example_5"><a href="#!">Stepper knob</a></li>
+              
             </ul>
           </div>
         </li>
@@ -184,7 +178,7 @@
               <span class="translatable_blocksXml">Blocks XML</span>
             </div>
             <div class="collapsible-body" style="position:relative" id="xml_collapsible_body">
-              <a class="btn-floating btn-large waves-effect waves-light arduino_teal z-depth-1-half" id="button_load_xml"><i class="mdi-action-extension"></i></a>
+              
               <textarea id="content_xml" class="content content_height_transition content_xml_large" wrap="soft"></textarea>
             </div>
           </li>
@@ -266,8 +260,8 @@
       <p><span id="gen_alert_body">Empty alert text</span></p>
     </div>
     <div class="modal-footer">
-      <a id="gen_alert_ok_link" href="#" class="waves-effect btn-flat modal-close"><span class="translatable_okay">Okay</span></a>
-      <a id="gen_alert_cancel_link" href="#" class="waves-effect btn-flat modal-close"><span class="translatable_cancel">Cancel</span></a>
+      <a id="gen_alert_ok_link" href="#" class="waves-effect btn-flat modal-close"><span class="translatable_okay">Ok</span></a>
+      <a id="gen_alert_cancel_link" href="#" class="waves-effect btn-flat modal-close"><span class="translatable_cancel">Annuler</span></a>
     </div>
   </div>
 

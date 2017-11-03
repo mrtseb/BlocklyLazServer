@@ -183,15 +183,14 @@ Ardublockly.discardAllBlocks = function() {
     Ardublockly.workspace.clear();
     Ardublockly.renderContent();
   } else if (blockCount > 1) {
-    Ardublockly.alertMessage(
-        Ardublockly.getLocalStr('discardBlocksTitle'),
-        Ardublockly.getLocalStr('discardBlocksBody')
-            .replace('%1', blockCount),
-        true,
-        function() {
+    //Ardublockly.alertMessage(
+        //Ardublockly.getLocalStr('discardBlocksTitle'),
+        //Ardublockly.getLocalStr('discardBlocksBody').replace('%1', blockCount),
+        //true,
+        //function() {
           Ardublockly.workspace.clear();
           Ardublockly.renderContent();
-        });
+        //});
   }
 };
 

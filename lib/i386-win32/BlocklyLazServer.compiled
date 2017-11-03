@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CONFIG>
-  <Compiler Value="D:\lazarus3\fpc\3.0.4\bin\i386-win32\fpc.exe" Date="1263232546"/>
-  <Params Value=" -MObjFPC -Scghi -O1 -g -gl -WG -l -vewnhibq -Fid:\lazarus3\stuff\BlocklyLaz\lib\i386-win32 -Fid:\lazarus3\comp\jcl-jvcl\jcl\source\include -Fld:\lazarus3\comp\jcl-jvcl\jcl\lib\fpc\i386-win32 -Fod:\lazarus3\comp\jcl-jvcl\jcl\lib\fpc\i386-win32 -FuD:\lazarus3\comp\user\lib\i386-win32 -Fud:\lazarus3\comp\fpCEF3\Component\lib\i386-win32 -Fud:\lazarus3\lcl\units\i386-win32\win32 -Fud:\lazarus3\lcl\units\i386-win32 -Fud:\lazarus3\components\lazutils\lib\i386-win32 -Fud:\lazarus3\comp\jcl-jvcl\jcl\lib\fpc\i386-win32 -Fud:\lazarus3\packager\units\i386-win32 -Fud:\lazarus3\stuff\BlocklyLaz\ -FUd:\lazarus3\stuff\BlocklyLaz\lib\i386-win32\ -dUseCThreads -dLCL -dLCLwin32 BlocklyLazServer.lpr"/>
-</CONFIG>

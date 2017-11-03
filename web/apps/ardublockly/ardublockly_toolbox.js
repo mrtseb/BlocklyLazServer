@@ -96,6 +96,11 @@ Ardublockly.TOOLBOX_CORE_XML =
 '  <sep></sep>' +
 '  <category id="catText" name="Text">' +
 '    <block type="text"></block>' +
+'    <block type="text_arduino">' +
+'      <value name="TEXT">' +
+'        <block type="text"></block>' +
+'      </value>' +
+'    </block>' +
 '    <block type="text_join"></block>' +
 '    <block type="text_append">' +
 '      <value name="TEXT">' +

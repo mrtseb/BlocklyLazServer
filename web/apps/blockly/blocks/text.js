@@ -35,6 +35,24 @@ goog.require('Blockly.Types');
  */
 Blockly.Blocks.texts.HUE = 160;
 
+Blockly.Blocks['text_arduino'] = {
+init: function() {
+    this.setHelpUrl(Blockly.Msg.TEXT_APPEND_HELPURL);
+    this.setColour(Blockly.Blocks.texts.HUE);
+    this.appendValueInput("TEXT")
+        .appendField("Code")
+        .appendField(new Blockly.FieldDropdown([["loop","LOOP"], ["setup","SETUP"], ["include","INCLUDE"]]), "TYPE")
+        .appendField(":");
+    this.setPreviousStatement(true);
+    this.setNextStatement(true);
+    // Assign 'this' to a variable for use in the tooltip closure below.
+    var thisBlock = this;
+    this.setTooltip(function() {
+      return Blockly.Msg.TEXT_TEXT_TOOLTIP;
+    });
+  }
+};
+
 Blockly.Blocks['text'] = {
   /**
    * Block for text value.
