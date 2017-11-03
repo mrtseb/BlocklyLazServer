@@ -42,7 +42,7 @@ Blockly.Blocks['mbot_light'] = {
     this.setColour(50);
     this.appendDummyInput()
         
-        .appendField(new Blockly.FieldImage("../../media/devices/mbot_motor.jpg", 64, 64))
+        //.appendField(new Blockly.FieldImage("../../media/devices/mbot.png", 64, 64))
 		.appendField("Luminosité sur")
         .appendField(new Blockly.FieldDropdown([["la carte", "6"], ["le port 3", "3"],  ["le port 4", "4"]]), "PORT");
 	this.setOutput(true, 'Boolean');
@@ -51,12 +51,96 @@ Blockly.Blocks['mbot_light'] = {
   }
 };
 
+Blockly.Blocks['mbot_ultrasonic'] = {
+  
+ 
+  init: function() {
+    this.setColour(50);
+    this.appendDummyInput()        
+        //.appendField(new Blockly.FieldImage("../../media/devices/mbot.png", 64, 64))
+		.appendField("Distance de l'obstacle en cm mesurée sur")
+        .appendField(new Blockly.FieldDropdown([["PORT1", "1"],["PORT2", "2"],["PORT3", "3"],["PORT4", "4"]]), "PORT");
+	this.setOutput(true, 'Boolean');
+    this.setTooltip("");
+    this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['mbot_follower'] = {
+  
+ 
+  init: function() {
+    this.setColour(50);
+    this.appendDummyInput()        
+        //.appendField(new Blockly.FieldImage("../../media/devices/mbot.png", 64, 64))
+		.appendField("Suiveur de ligne")
+        .appendField(new Blockly.FieldDropdown([["Port1", "1"],["Port2", "2"],["Port3", "3"],["Port4", "4"]]), "PORT")
+		.appendField(new Blockly.FieldDropdown([["Côté gauche", "2"],["Côté droite", "1"]]), "COTE")
+		.appendField("est")
+		.appendField(new Blockly.FieldDropdown([["Noir", "0"],["Blanc", "1"]]), "COULEUR")
+		;
+	this.setOutput(true, 'Boolean');
+    this.setTooltip("");
+    this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['mbot_core_button'] = {
+  
+ 
+  init: function() {
+    this.setColour(50);
+    this.appendDummyInput()
+        
+        //.appendField(new Blockly.FieldImage("../../media/devices/mbot.png", 64, 64))
+		.appendField("Bouton de la carte")
+        .appendField(new Blockly.FieldDropdown([["enfonçé", "0"],["relâché", "1"]]), "BOUTON");
+	this.setOutput(true, 'Boolean');
+    this.setTooltip("");
+    this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['mbot_ir_loop'] = {
+  
+ 
+  init: function() {
+    this.setColour(50);
+    this.appendDummyInput()        
+        .appendField("Boucle de la télécommande");
+	this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setInputsInline(true); 
+    this.setTooltip("");
+    this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['mbot_ir_rec'] = {
+  
+ 
+  init: function() {
+    this.setColour(50);
+    this.appendDummyInput()        
+        //.appendField(new Blockly.FieldImage("../../media/devices/mbot.png", 64, 64))
+		.appendField("Touche de la télécommande")
+        .appendField(new Blockly.FieldDropdown([
+		["A", "69"],["B", "70"],["C", "71"],["D", "68"],["E", "67"],["F", "13"],
+		["▲", "64"],["▼", "25"],["◄", "7"],["►", "9"],["Réglage", "21"],
+		["R0", "22"],["R1", "12"],["R2", "24"],["R3", "94"],["R4", "8"],["R5", "28"],
+		["R6", "90"],["R8", "66"],["R9", "82"],["R10", "74"]
+		]), "TOUCHE");
+	this.setOutput(true, 'Boolean');
+    this.setTooltip("");
+    this.setHelpUrl("");
+  }
+};
 
 Blockly.Blocks['mbot_init'] = {
   init: function() {
 	
     this.appendDummyInput()
-	    .appendField(new Blockly.FieldImage("../../media/devices/mbot_motor.jpg", 64, 64))
+	    .appendField(new Blockly.FieldImage("../../media/devices/mbot.png", 64, 64))
         .appendField("Initialisation Mbot");
 	//this.appendValueInput("TEXT", 'String');
         
@@ -83,7 +167,7 @@ Blockly.Blocks._change = function(event) {
 Blockly.Blocks['mbot_move'] = {
   init: function() {
     this.appendDummyInput()
-	    .appendField(new Blockly.FieldImage("../../media/devices/mbot_motor.jpg", 64, 64))
+	    //.appendField(new Blockly.FieldImage("../../media/devices/mbot_motor.jpg", 64, 64))
         .appendField(new Blockly.FieldDropdown([["avancer","1"], ["reculer","2"],["tourner à droite","4"], ["tourner à gauche","3"]]), "COMMANDE")
         .appendField("Puissance")
         .appendField(new Blockly.FieldDropdown([["255","255"], ["100","100"], ["50","50"], ["0","0"], ["-50","-50"], ["-100","-100"], ["-255","-255"]]), "VITESSE");
@@ -103,7 +187,7 @@ Blockly.Blocks['mbot_move'] = {
 Blockly.Blocks['mbot_conf_motor'] = {
   init: function() {
     this.appendDummyInput()
-	    .appendField(new Blockly.FieldImage("../../media/devices/mbot_motor.jpg", 64, 64))
+	    //.appendField(new Blockly.FieldImage("../../media/devices/mbot_motor.jpg", 64, 64))
         .appendField("Moteur")
 		.appendField(new Blockly.FieldDropdown([["M1","M1"], ["M2","M2"]]), "MOTEUR")
         .appendField("à la vitesse")
@@ -123,7 +207,7 @@ Blockly.Blocks['mbot_conf_motor'] = {
 Blockly.Blocks['mbot_buzzer'] = {
 	init: function() {
     this.appendDummyInput()
-	    .appendField(new Blockly.FieldImage("../../media/devices/mbot_motor.jpg", 64, 64))
+	    //.appendField(new Blockly.FieldImage("../../media/devices/mbot_motor.jpg", 64, 64))
         .appendField("Jouer la note")
 		.appendField(new Blockly.FieldDropdown([
 		["C2","65"],
@@ -188,7 +272,7 @@ Blockly.Blocks['mbot_buzzer'] = {
 Blockly.Blocks['mbot_leds'] = {
   init: function() {
     this.appendDummyInput()
-	    .appendField(new Blockly.FieldImage("../../media/devices/mbot_motor.jpg", 64, 64))
+	    //.appendField(new Blockly.FieldImage("../../media/devices/mbot_mcore_leds.jpg", 64, 64))
         .appendField("LED")
 		.appendField(new Blockly.FieldDropdown([["Tout","0"], ["Led de gauche","2"], ["Led de droite","1"]]), "LED")
         .appendField("en rouge")

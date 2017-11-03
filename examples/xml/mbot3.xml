@@ -1,0 +1,76 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="mbot_init" id="-o}@?DzXwo^KC4}p9YI%" x="91" y="-178">
+    <next>
+      <block type="mbot_ir_loop" id="s]_=w](HoI61%gtjle]q">
+        <next>
+          <block type="controls_if" id="Dq.I+,Jc!OtH[2duvMbj">
+            <value name="IF0">
+              <block type="mbot_ir_rec" id="BnFi2`_ls-9L;Zs!y6[q">
+                <field name="TOUCHE">69</field>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="mbot_leds" id="UXMO6-#bUO3@wXO[Z/cW">
+                <field name="LED">2</field>
+                <field name="ROUGE">255</field>
+                <field name="VERT">0</field>
+                <field name="BLEU">0</field>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_if" id="^z(BrIenVl[kPRNN*lU5">
+                <value name="IF0">
+                  <block type="mbot_ir_rec" id="kGw9gSpOvikj(*;{rHV.">
+                    <field name="TOUCHE">70</field>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="mbot_leds" id="Rw8r`2E#BvA7q2Kk_g/b">
+                    <field name="LED">1</field>
+                    <field name="ROUGE">0</field>
+                    <field name="VERT">0</field>
+                    <field name="BLEU">255</field>
+                  </block>
+                </statement>
+                <next>
+                  <block type="controls_if" id="Eg/4iyLU7Yly!{z/*eBC">
+                    <value name="IF0">
+                      <block type="mbot_ir_rec" id=")MK}#S%e}2N~^nwt(w[~">
+                        <field name="TOUCHE">71</field>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="mbot_leds" id="c;!q8;YW`-7hXwnTo{ru">
+                        <field name="LED">0</field>
+                        <field name="ROUGE">255</field>
+                        <field name="VERT">255</field>
+                        <field name="BLEU">0</field>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="controls_if" id="Jk`eNadDeV6XI#7ILaQS">
+                        <value name="IF0">
+                          <block type="mbot_ir_rec" id="}2gf/pZXhet?;.sqjtHU">
+                            <field name="TOUCHE">21</field>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="mbot_leds" id="DcWyb7S0hP-?Cd;vNV?3">
+                            <field name="LED">0</field>
+                            <field name="ROUGE">0</field>
+                            <field name="VERT">0</field>
+                            <field name="BLEU">0</field>
+                          </block>
+                        </statement>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

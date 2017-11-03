@@ -23,14 +23,14 @@ Blockly.Arduino.mbot_init = function(block) {
   Blockly.Arduino.definitions_['define_memcore_object9'] = 'MeDCMotor motor_9(9);\n';
   Blockly.Arduino.definitions_['define_memcore_object10'] = 'MeDCMotor motor_10(10);\n';
   
+  Blockly.Arduino.definitions_['define_loop_function'] =  
+  'void _loop(){\n' +
+  '}\n';
+  
   Blockly.Arduino.definitions_['define_delay_function'] =
   'void _delay(float seconds){\n' +
   '  long endTime = millis() + seconds * 1000;\n' +
   '  while(millis() < endTime)_loop();\n' +
-  '}\n';
-
-  Blockly.Arduino.definitions_['define_loop_function'] =  
-  'void _loop(){\n' +
   '}\n';
   
   Blockly.Arduino.definitions_['define_move_function'] = 
@@ -93,7 +93,7 @@ Blockly.Arduino.mbot_leds = function(block) {
   var bleu = block.getFieldValue('BLEU');  
   Blockly.Arduino.definitions_['mbot_rgbled'] = 'MeRGBLed rgbled_7(7, 7==7?2:4);\n';
   var code= 'rgbled_7.setColor('+led+','+rouge+','+vert+','+bleu+');\n' +
-  '  rgbled_7.show();\n';
+  'rgbled_7.show();\n';
   
    return code;
 }
@@ -101,12 +101,34 @@ Blockly.Arduino.mbot_leds = function(block) {
 Blockly.Arduino.mbot_buzzer = function(block) {
   var note = block.getFieldValue('NOTE');
   var temps = block.getFieldValue('TEMPS');
-  Blockly.Arduino.definitions_['mbot_light'] = 'MeBuzzer buzzer;\n';
+  Blockly.Arduino.definitions_['mbot_buzzer'] = 'MeBuzzer buzzer;\n';
   var code = 'buzzer.tone('+note+', '+temps+');\n' +
-  '  delay(20);\n';
+  'delay(20);\n';
     
     return code;
   
+ 
+}
+
+Blockly.Arduino.mbot_ultrasonic = function() {
+  var port = this.getFieldValue('PORT');
+  Blockly.Arduino.definitions_['mbot_ultrasonic'] = 'MeUltrasonicSensor ultrasonic_'+port+'('+port+');\n';
+  var code;
+  code = 'ultrasonic_'+port+'.distanceCm()'
+      
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
+ 
+}
+
+Blockly.Arduino.mbot_follower = function() {
+  var port = this.getFieldValue('PORT');
+  var cote = this.getFieldValue('COTE');
+  var couleur = this.getFieldValue('COULEUR');
+  Blockly.Arduino.definitions_['mbot_follower'] = 'MeLineFollower linefollower_'+port+'('+port+');\n';
+  var code;
+  code = '(true&&('+couleur+'?(linefollower_'+port+'.readSensors()&'+cote+'):!(linefollower_'+port+'.readSensors()&'+cote+')))';
+      
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
  
 }
 
@@ -115,6 +137,34 @@ Blockly.Arduino.mbot_light = function() {
   Blockly.Arduino.definitions_['mbot_light'] = 'MeLightSensor lightsensor_'+port+'('+port+');\n';
   var code;
   code = 'lightsensor_'+port+'.read()';
+    
+ return [code, Blockly.Arduino.ORDER_ATOMIC];
+ 
+}
+
+Blockly.Arduino.mbot_core_button = function() {
+  var bouton = this.getFieldValue('BOUTON');
+  Blockly.Arduino.setups_['mbot_core_bouton'] = 'pinMode(A7,INPUT);\n';
+  var code;
+  code = '('+bouton+'^(analogRead(A7)>10?0:1))';
+    
+ return [code, Blockly.Arduino.ORDER_ATOMIC];
+ 
+}
+
+Blockly.Arduino.mbot_ir_loop = function() {
+  
+ 
+  return  'ir.loop();\n'; 
+ 
+}
+
+Blockly.Arduino.mbot_ir_rec = function() {
+  var bouton = this.getFieldValue('TOUCHE');
+  Blockly.Arduino.definitions_['mbot_ir_rec_def'] = 'MeIR ir;\n';
+  Blockly.Arduino.setups_['mbot_ir_rec_setup'] = 'ir.begin();\n';
+  var code;
+  code = 'ir.keyPressed('+bouton+')';
     
  return [code, Blockly.Arduino.ORDER_ATOMIC];
  

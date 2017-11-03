@@ -1,0 +1,55 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="mbot_init" id="=4!VDH/Na(5btaeF[QlR" x="42" y="43">
+    <next>
+      <block type="variables_set" id="=(s[0O~eDr[R_:m-+f3G">
+        <field name="VAR">variable</field>
+        <value name="VALUE">
+          <block type="variables_set_type" id="(dO;y.r%)J4r*h0I8,,z">
+            <field name="VARIABLE_SETTYPE_TYPE">DECIMAL</field>
+            <value name="VARIABLE_SETTYPE_INPUT">
+              <block type="mbot_ultrasonic" id="HSo4.atF9!@|GrpIu@mF">
+                <field name="PORT">1</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id="K+/~^6+PUwD@el{j/=1t">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+              <block type="logic_compare" id="X8aWCk%;J_T[doe!o%}|">
+                <field name="OP">LT</field>
+                <value name="A">
+                  <block type="variables_get" id="UEC4N;NU)^;)@oKQNYu)">
+                    <field name="VAR">variable</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="ph7-fc(=mz]m,,^~VxE`">
+                    <field name="NUM">20</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="mbot_leds" id=".#_9WH+WytJ6EJ[0Sxu?">
+                <field name="LED">0</field>
+                <field name="ROUGE">255</field>
+                <field name="VERT">0</field>
+                <field name="BLEU">0</field>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="mbot_leds" id="62zwx8P^s^/qECEI.Gl;">
+                <field name="LED">0</field>
+                <field name="ROUGE">0</field>
+                <field name="VERT">0</field>
+                <field name="BLEU">0</field>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

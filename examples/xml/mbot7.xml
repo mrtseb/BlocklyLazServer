@@ -1,0 +1,60 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="mbot_init" id="k*5IX6VaC(^I1);y:yRK" x="107" y="68">
+    <next>
+      <block type="controls_if" id=")nA=Q-F;+VnpIV9wsts)">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="mbot_follower" id="5VM5NVf%b1.qI~9SsmCN">
+            <field name="PORT">4</field>
+            <field name="COTE">2</field>
+            <field name="COULEUR">0</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="mbot_leds" id="ft5(@A:E+yacD]^B8T}=">
+            <field name="LED">2</field>
+            <field name="ROUGE">0</field>
+            <field name="VERT">0</field>
+            <field name="BLEU">255</field>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_if" id="D`o0O-A:gV[*`lhsB`Af">
+            <value name="IF0">
+              <block type="mbot_follower" id="5T3y]w=GVQ#.n]-!`~Sw">
+                <field name="PORT">4</field>
+                <field name="COTE">1</field>
+                <field name="COULEUR">0</field>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="mbot_leds" id="tBcLny@_Y@QlfBA^Mr(d">
+                <field name="LED">1</field>
+                <field name="ROUGE">0</field>
+                <field name="VERT">0</field>
+                <field name="BLEU">255</field>
+              </block>
+            </statement>
+            <next>
+              <block type="time_delay" id="g|hBEK;qw%(g1C+@?fPY">
+                <value name="DELAY_TIME_MILI">
+                  <block type="math_number" id="{Ae^5.I|c^=qdgg*/?_^">
+                    <field name="NUM">500</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="mbot_leds" id="n{zNe?|bEC;o67|*7C@O">
+                    <field name="LED">0</field>
+                    <field name="ROUGE">0</field>
+                    <field name="VERT">0</field>
+                    <field name="BLEU">0</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

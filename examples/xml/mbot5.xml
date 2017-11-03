@@ -1,0 +1,64 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="mbot_init" id="-o}@?DzXwo^KC4}p9YI%" x="179" y="-208">
+    <next>
+      <block type="variables_set" id="Y4xf9N/.A@~[?:b;^r:d">
+        <field name="VAR">variable</field>
+        <value name="VALUE">
+          <block type="variables_set_type" id=")MVDOb-jD}.g1h5d!@%S">
+            <field name="VARIABLE_SETTYPE_TYPE">NUMBER</field>
+            <value name="VARIABLE_SETTYPE_INPUT">
+              <block type="mbot_light" id="7.Z+mtGR#g@^Oa,Ei4,%">
+                <field name="PORT">6</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id="JsN`A5kJ/}0?*CrhW4N*">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+              <block type="logic_compare" id="nF2:S,(XT%W!_vDBsON4">
+                <field name="OP">LT</field>
+                <value name="A">
+                  <block type="variables_get" id="K/SWYDkOodX!UUlB[pB7">
+                    <field name="VAR">variable</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="YoXIQY^/.Pz{yz-sR^VP">
+                    <field name="NUM">300</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="mbot_leds" id=":y/+r%@9b;rTugLMF=QC">
+                <field name="LED">0</field>
+                <field name="ROUGE">255</field>
+                <field name="VERT">255</field>
+                <field name="BLEU">255</field>
+                <next>
+                  <block type="time_delay" id="LhFsd-Iijytx5LoW^;3O">
+                    <value name="DELAY_TIME_MILI">
+                      <block type="math_number" id="1nZsCp:VyH1Ob|1~ah@W">
+                        <field name="NUM">500</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="mbot_leds" id="!m]QH|5Mt=|YS,M/D6)y">
+                <field name="LED">0</field>
+                <field name="ROUGE">0</field>
+                <field name="VERT">0</field>
+                <field name="BLEU">0</field>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

@@ -1,0 +1,38 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="mbot_init" id="g,x~!;8=zL4yw8bK?jwZ" x="-36" y="-70">
+    <next>
+      <block type="mbot_leds" id="@:Y^G@YesA.nQ`|YP+V-">
+        <field name="LED">0</field>
+        <field name="ROUGE">255</field>
+        <field name="VERT">0</field>
+        <field name="BLEU">0</field>
+        <next>
+          <block type="time_delay" id=")7Pl~TA(::i.^Luf}`hP">
+            <value name="DELAY_TIME_MILI">
+              <block type="math_number" id="FQ;:,19quC9SZRyjxQx,">
+                <field name="NUM">500</field>
+              </block>
+            </value>
+            <next>
+              <block type="mbot_leds" id=",~W#{Mh;4(R2/9A!)L2@">
+                <field name="LED">0</field>
+                <field name="ROUGE">0</field>
+                <field name="VERT">255</field>
+                <field name="BLEU">0</field>
+                <next>
+                  <block type="time_delay" id="h+[].(rDUI~-VjJn;.mT">
+                    <value name="DELAY_TIME_MILI">
+                      <block type="math_number" id="tV1-EBtyP*OzmMr;gA|=">
+                        <field name="NUM">500</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

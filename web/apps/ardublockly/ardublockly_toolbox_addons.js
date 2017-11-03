@@ -26,6 +26,11 @@ Ardublockly.TOOLBOX_ADDITIONAL_XML =
 '    <block type="mbot_leds"></block>' +
 '    <block type="mbot_buzzer"></block>' +
 '    <block type="mbot_light"></block>' +
+'   <block type="mbot_core_button"></block>' +
+'   <block type="mbot_ir_rec"></block>' +
+'   <block type="mbot_ir_loop"></block>' +
+'   <block type="mbot_ultrasonic"></block>' +
+'   <block type="mbot_follower"></block>' +
 '  </category>';
 
 

@@ -1,0 +1,30 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="mbot_init" id="Ln!Es!H^u4cN?{T(jlbz" x="55" y="55">
+    <next>
+      <block type="controls_if" id="Nd0,e!h*Pu9SifprSMiE">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="mbot_core_button" id="0l6iB6ehYIHyW~Kqp4`:">
+            <field name="BOUTON">0</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="mbot_leds" id="g,YhMf``7v*z()lE(0Cp">
+            <field name="LED">0</field>
+            <field name="ROUGE">255</field>
+            <field name="VERT">0</field>
+            <field name="BLEU">0</field>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="mbot_leds" id="1#%4V5U77S[c=W`KmHsl">
+            <field name="LED">0</field>
+            <field name="ROUGE">0</field>
+            <field name="VERT">0</field>
+            <field name="BLEU">0</field>
+          </block>
+        </statement>
+      </block>
+    </next>
+  </block>
+</xml>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="5">
+      <Unit0>
+        <Filename Value="test_cmd.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="testcmdunit1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="34"/>
+        <CursorPos X="76" Y="52"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\..\comp\user\dpipes.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="7"/>
+        <CursorPos X="3" Y="28"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\comp\user\dprocess.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="666"/>
+        <CursorPos X="92" Y="708"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\comp\user\process_win.inc"/>
+        <EditorIndex Value="3"/>
+        <CursorPos X="38" Y="274"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit4>
+    </Units>
+    <JumpHistory Count="12" HistoryIndex="11">
+      <Position1>
+        <Filename Value="..\..\..\comp\user\dpipes.pas"/>
+        <Caret Line="28" Column="3" TopLine="7"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\..\comp\user\dprocess.pas"/>
+        <Caret Line="27" Column="3" TopLine="6"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\..\comp\user\dprocess.pas"/>
+        <Caret Line="198" Column="104" TopLine="192"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\..\comp\user\dprocess.pas"/>
+        <Caret Line="199" Column="91" TopLine="193"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\..\comp\user\process_win.inc"/>
+        <Caret Line="229" Column="34" TopLine="226"/>
+      </Position5>
+      <Position6>
+        <Filename Value="..\..\..\comp\user\process_win.inc"/>
+        <Caret Line="249" Column="17" TopLine="229"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\..\..\comp\user\process_win.inc"/>
+        <Caret Line="250" Column="24" TopLine="229"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\..\..\comp\user\process_win.inc"/>
+        <Caret Line="253" Column="24" TopLine="232"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\..\..\comp\user\process_win.inc"/>
+        <Caret Line="259" Column="24" TopLine="238"/>
+      </Position9>
+      <Position10>
+        <Filename Value="..\..\..\comp\user\process_win.inc"/>
+        <Caret Line="262" Column="16" TopLine="241"/>
+      </Position10>
+      <Position11>
+        <Filename Value="..\..\..\comp\user\process_win.inc"/>
+        <Caret Line="235" Column="3" TopLine="220"/>
+      </Position11>
+      <Position12>
+        <Filename Value="testcmdunit1.pas"/>
+        <Caret Line="54" Column="63" TopLine="16"/>
+      </Position12>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

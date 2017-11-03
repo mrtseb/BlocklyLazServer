@@ -27,6 +27,7 @@ type
     Panel1: TPanel;
     procedure BitBtn1Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
+
     procedure ComboBox1Change(Sender: TObject);
     procedure FormActivate(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -118,9 +119,8 @@ begin
 
        if mustUpload='false' then s:=s+'examples\'+lang+'\'+fn else
        begin
-         sParent := IncludeTrailingPathDelimiter(s) + '..' + PathDelim; // Make parent path for executable
-         sParent2 := ExpandFileName(sParent);
-         s:=ExpandFilename(sParent2)+'Arduino\ino\default.ino';
+         s:='.\Arduino\ino\'+getenv('userdomain')+'_'+getenv('username')+'_'+'default.ino';
+         form1.caption:=s;
        end;
        if fileexists(s) then deletefile(s);
        for i:=15 to self.Memo1.Lines.Count-2 do code.Add(memo1.lines[i]);
@@ -132,8 +132,8 @@ begin
           exit;
        end;
 
-       execute('cmd /c cd '+ExpandFilename(sParent2)+'\Arduino'+ ' & .\bat\compilHEX.bat',handler,true,nil);
-       s:= 'cmd /c cd '+ExpandFilename(sParent2)+'\Arduino'+ ' & .\bat\uploadHEX.bat '+FPort;
+       execute('cmd /c cd .\Arduino'+ ' & .\bat\compilHEX.bat',handler,true,nil);
+       s:= 'cmd /c cd .\Arduino'+ ' & .\bat\uploadHEX.bat '+FPort;
        memo1.lines.add(s);
        if FPort<> '' then execute(s,handler,true,nil);
        //AResponseInfo.ContentType := 'text/plain';
@@ -182,6 +182,8 @@ begin
   self.IdHTTPServer1.Active:=true;
   self.Chromium1.Load(Utf8Decode('http://localhost:8080/apps/ardublockly/index.html'));
 end;
+
+
 
 procedure TForm1.ComboBox1Change(Sender: TObject);
 begin
