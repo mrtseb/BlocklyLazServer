@@ -12,6 +12,129 @@
 goog.provide('Blockly.Arduino.grove');
 
 goog.require('Blockly.Arduino');
+//rem unixtime = time en s depuis 01/01/1970
+// si (now.unixtime - depart.unixtime) % 1 = 0 alors 1 SEC DE PASSEE
+// si (now.unixtime - depart.unixtime) % 60 = 0 alors 1 MIN DE PASSEE
+// si (now.unixtime - depart.unixtime) % 60*60 = 0 alors 1 H DE PASSEE
+   
+Blockly.Arduino.grove_rtc = function(block) {
+	
+	Blockly.Arduino.definitions_['define_rtclib_current'] = 'long currentTime;\n';
+	Blockly.Arduino.definitions_['define_rtclib_lasttime'] = 'double lastTime;\n';
+	Blockly.Arduino.definitions_['define_rtclib_getlasttime'] = 'long getLastTime(){\n' +
+	'  return currentTime = (long) (millis()/1000.0 - lastTime);\n'+
+	'}\n';
+	
+    Blockly.Arduino.setups_['setup_rtclib_setLastTime'] ='lastTime= millis()/1000.0;\n';
+	
+	
+	var timing = this.getFieldValue('TIMING');
+    var times = Blockly.Arduino.valueToCode(this, 'TIMES', Blockly.Arduino.ORDER_UNARY_POSTFIX) || 'S';
+    var branch = Blockly.Arduino.statementToCode(block, 'DO');
+    var plus;
+      if (timing == 'S') {
+	    plus = times*1;
+      }
+      if (timing=='M') {
+	    plus = times*60;
+      }
+      if (timing=='H') {
+	    plus = times*60*60;
+      }
+
+  var code = 
+'currentTime = getLastTime();\n'+
+'if (currentTime % ('+plus+') == 0) {\n' +
+branch +
+'}\n';  
+  
+  return code;
+	
+}   
+   
+   
+Blockly.Arduino.grove_rtc2 = function(block) {
+  
+  Blockly.Arduino.definitions_['define_rtclib_wire'] = '#include <wire.h>;\n';
+  Blockly.Arduino.definitions_['define_rtclib'] = '#include "RTClib.h";\n';
+  Blockly.Arduino.definitions_['define_rtclib_var'] = 'RTC_DS1307 rtc;\n';
+  Blockly.Arduino.definitions_['define_rtclib_now'] = 'DateTime now;\n';
+  Blockly.Arduino.definitions_['define_rtclib_depart'] = 'DateTime depart;\n';
+    
+  Blockly.Arduino.setups_['setup_rtclib_begin'] = 
+'if (! rtc.begin()) {\n' +
+//'    Serial.println("Couldn\'t find RTC");\n' +
+'    while (1);\n' +
+'  }\n' +
+'  if (! rtc.isrunning()) {\n' +
+'    rtc.adjust(DateTime(2014, 1, 21, 3, 0, 0));\n' +
+'  }\n'+
+'  else {\n' +
+'    depart = rtc.now();\n' +	
+'  }\n'; 
+  var timing = this.getFieldValue('TIMING');
+  var times = Blockly.Arduino.valueToCode(this, 'TIMES', Blockly.Arduino.ORDER_UNARY_POSTFIX) || 'S';
+  var branch = Blockly.Arduino.statementToCode(block, 'DO');
+  var plus;
+  if (timing == 'S') {
+	plus = times*1;
+  }
+  if (timing=='M') {
+	plus = times*60;
+  }
+  if (timing=='H') {
+	plus = times*60*60;
+  }
+
+  var code = 
+'now = rtc.now();\n'+
+'if ((now.unixtime() - depart.unixtime()) % ('+plus+') == 0) {\n' +
+branch +
+'}\n';  
+  
+  return code;
+}
+
+Blockly.Arduino.grove_rtc_config = function(block) {
+  
+  Blockly.Arduino.definitions_['define_rtclib_wire'] = '#include <wire.h>;\n';
+  Blockly.Arduino.definitions_['define_rtclib'] = '#include "RTClib.h";\n';
+  Blockly.Arduino.definitions_['define_rtclib_var'] = 'RTC_DS1307 rtc;\n';
+  
+  Blockly.Arduino.setups_['setup_rtclib_begin'] = 
+'if (! rtc.begin()) {\n' +
+//'    Serial.println("Couldn\'t find RTC");\n' +
+'    while (1);\n' +
+'  }\n' +
+'  if (! rtc.isrunning()) {\n' +
+'    rtc.adjust(DateTime(2014, 1, 21, 3, 0, 0));\n' +
+'  }\n';
+var code='DateTime now = rtc.now();\n';
+return code;
+}
+
+Blockly.Arduino.grove_rtc_get = function(block) {
+  
+
+  var timing = this.getFieldValue('TIMING');
+  var code;
+  if (timing=='J') {
+	  code = 'now.day()';
+  } else if (timing=='O') {
+	  code = 'now.month()';
+  } else if (timing=='A') {
+	  code = 'now.year()';
+  } else if (timing=='H') {
+	  code = 'now.hour()';
+  } else if (timing=='M') {
+	  code = 'now.minute()';
+  } else if (timing=='S') {
+	  code = 'now.second()';
+  }
+  
+  return [code, Blockly.Arduino.ORDER_UNARY_POSTFIX];
+}
+
 
 
 Blockly.Arduino.grove_led = function() {

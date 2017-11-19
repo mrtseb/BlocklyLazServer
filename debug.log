@@ -1,0 +1,5 @@
+[1119/094656.475:INFO:CONSOLE(1877)] "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.", source: http://localhost:8080/apps/closure-library/closure/goog/base.js (1877)
+[1119/094657.354:INFO:CONSOLE(180)] "Localised text string ID "catMbot" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[1119/094657.354:INFO:CONSOLE(180)] "Localised text string ID "catRtc" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[1119/094657.435:INFO:CONSOLE(180)] "Localised text string ID "uploadSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[1119/094721.354:INFO:CONSOLE(180)] "Localised text string ID "uploadingSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)

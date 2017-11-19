@@ -20,14 +20,22 @@ type
     Button1: TButton;
     Chromium1: TChromium;
     ComboBox1: TComboBox;
+    cmbCard: TComboBox;
     IdHTTPServer1: TIdHTTPServer;
     IdleTimer1: TIdleTimer;
     Label1: TLabel;
+    Label2: TLabel;
     Memo1: TMemo;
     Panel1: TPanel;
+    RadioButton1: TRadioButton;
+    RadioButton2: TRadioButton;
+    RadioButton3: TRadioButton;
+    RadioButton4: TRadioButton;
+    RadioButton5: TRadioButton;
     procedure BitBtn1Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
-    procedure CheckBox1Change(Sender: TObject);
+    procedure cmbCardChange(Sender: TObject);
+
     procedure ComboBox1Change(Sender: TObject);
     procedure FormActivate(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -35,8 +43,15 @@ type
     procedure IdHTTPServer1CommandGet(AContext: TIdContext;
       ARequestInfo: TIdHTTPRequestInfo; AResponseInfo: TIdHTTPResponseInfo);
     procedure IdleTimer1Timer(Sender: TObject);
+    procedure RadioButton1Click(Sender: TObject);
+    procedure RadioButton2Change(Sender: TObject);
+    procedure RadioButton2Click(Sender: TObject);
+    procedure RadioButton3Click(Sender: TObject);
+    procedure RadioButton4Click(Sender: TObject);
+    procedure RadioButton5Change(Sender: TObject);
+    procedure RadioButton5Click(Sender: TObject);
   private
-     FPort:string;
+     FPort, Fbaud:string;
      handler:TTextHandler;
      procedure gereTexte(const Txt: string);
   public
@@ -133,7 +148,7 @@ begin
        end;
 
        execute('cmd /c cd .\Arduino'+ ' & .\bat\compilHEX.bat',handler,true,nil);
-       s:= 'cmd /c cd .\Arduino'+ ' & .\bat\uploadHEX.bat '+FPort;
+       s:= 'cmd /c cd .\Arduino'+ ' & .\bat\uploadHEX.bat '+FPort+' '+Fbaud;
        memo1.lines.add(s);
        if FPort<> '' then execute(s,handler,true,nil);
        //AResponseInfo.ContentType := 'text/plain';
@@ -155,6 +170,41 @@ begin
   if not self.IdHTTPServer1.Active then self.Button1Click(self);
 end;
 
+procedure TForm1.RadioButton1Click(Sender: TObject);
+begin
+   self.Chromium1.Load(Utf8Decode('http://localhost:8080/apps/ardublockly/index.html'));
+end;
+
+procedure TForm1.RadioButton2Change(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.RadioButton2Click(Sender: TObject);
+begin
+  self.Chromium1.Load(Utf8Decode('http://localhost:8080/codejs/demos/code/index.html?lang=fr'));
+end;
+
+procedure TForm1.RadioButton3Click(Sender: TObject);
+begin
+    self.Chromium1.Load(Utf8decode('http://localhost:8080/blocklyg/fr/turtle.html?lang=fr&level=10'));
+end;
+
+procedure TForm1.RadioButton4Click(Sender: TObject);
+begin
+  self.Chromium1.Load(Utf8Decode('http://localhost:8080/blocklyg/fr/movie.html?lang=fr '));
+end;
+
+procedure TForm1.RadioButton5Change(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.RadioButton5Click(Sender: TObject);
+begin
+  self.Chromium1.Load(Utf8Decode('http://localhost:8080/blocksCAD/index.html?lang=fr'));
+end;
+
 procedure TForm1.FormCreate(Sender: TObject);
 var
   PrjPath: ustring;
@@ -167,6 +217,7 @@ begin
   GetLanguageIDs(Lang, FallbackLang);
   CefLocale := UTF8Decode(FallbackLang);
   self.BitBtn1Click(self);
+  self.cmbCard.itemindex:=0;
 end;
 
 procedure TForm1.BitBtn1Click(Sender: TObject);
@@ -181,6 +232,12 @@ procedure TForm1.Button1Click(Sender: TObject);
 begin
   self.IdHTTPServer1.Active:=true;
   self.Chromium1.Load(Utf8Decode('http://localhost:8080/apps/ardublockly/index.html'));
+end;
+
+procedure TForm1.cmbCardChange(Sender: TObject);
+begin
+  if cmbCard.ItemIndex=0 then self.Fbaud:='115200';
+  if cmbCard.ItemIndex=1 then self.Fbaud:='57600';
 end;
 
 

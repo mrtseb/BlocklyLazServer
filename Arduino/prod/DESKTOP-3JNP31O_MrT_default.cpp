@@ -1,57 +1,38 @@
 #include "Arduino.h"
   
+#include <wire.h>;
+
+#include "RTClib.h";
+
+RTC_DS1307 rtc;
+
 #include <Wire.h>
 
 #include <SoftwareSerial.h>
 
-#include <MeMCore.h>
+#include "rgb_lcd.h"
 
-MeDCMotor motor_9(9);
-
-MeDCMotor motor_10(10);
-
-void _loop(){
-}
-
-void _delay(float seconds){
-  long endTime = millis() + seconds * 1000;
-  while(millis() < endTime)_loop();
-}
-
-void move(int direction, int speed)
-{
-    int leftSpeed = 0;
-    int rightSpeed = 0;
-    if(direction == 1){
-      	leftSpeed = speed;
-      	rightSpeed = speed;
-    }else if(direction == 2){
-      	leftSpeed = -speed;
-      	rightSpeed = -speed;
-    }else if(direction == 3){
-      	leftSpeed = -speed;
-      	rightSpeed = speed;
-    }else if(direction == 4){
-      	leftSpeed = speed;
-      	rightSpeed = -speed;
-    }
-    motor_9.run((9)==M1?-(leftSpeed):(leftSpeed));
-    motor_10.run((10)==M1?-(rightSpeed):(rightSpeed));
-}
-
-MeRGBLed rgbled_7(7, 7==7?2:4);
+rgb_lcd rgbLcd;
 
 
 void setup() {
+  if (! rtc.begin()) {
+    while (1);
+  }
+  if (! rtc.isrunning()) {
+    rtc.adjust(DateTime(2014, 1, 21, 3, 0, 0));
+  }
+
+  rgbLcd.begin(16,2);
+
 }
 
 void loop() {
-  _loop();
-  rgbled_7.setColor(0,255,0,0);
-  rgbled_7.show();
-  delay(500);
-  rgbled_7.setColor(0,0,255,0);
-  rgbled_7.show();
-  delay(500);
+  DateTime now = rtc.now();
+  rgbLcd.setCursor(0,0);
+  rgbLcd.print((String(now.day()) + String("/") + String(now.month()) + String("/") + String(now.year())));
+  rgbLcd.setCursor(0,1);
+  rgbLcd.print((String(now.hour()) + String(":") + String(now.minute()) + String(":") + String(now.second())));
+  delay(1000);
 
 }

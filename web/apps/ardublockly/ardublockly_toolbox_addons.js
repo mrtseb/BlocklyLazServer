@@ -31,8 +31,19 @@ Ardublockly.TOOLBOX_ADDITIONAL_XML =
 '   <block type="mbot_ir_loop"></block>' +
 '   <block type="mbot_ultrasonic"></block>' +
 '   <block type="mbot_follower"></block>' +
+'  </category>' +
+'  <sep></sep>' +
+'  <category id="catRtc" name="Rtc">' +
+'    <block type="grove_rtc_config"></block>' +
+'    <block type="grove_rtc_get"></block>' +
+'    <block type="grove_rtc2">' +
+'      <value name="TIMES">' +
+'        <block type="math_number">' +
+'          <field name="NUM">1</field>' +
+'        </block>' +
+'      </value>' +
+'    </block>' +
 '  </category>';
-
 
 
 Ardublockly.TOOLBOX_XML = Ardublockly.TOOLBOX_BEGIN_XML + Ardublockly.TOOLBOX_CORE_XML +  Ardublockly.TOOLBOX_ADDITIONAL_XML + Ardublockly.TOOLBOX_END_XML;

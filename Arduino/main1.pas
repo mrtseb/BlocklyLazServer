@@ -13,12 +13,13 @@ type
   { TForm1 }
 
   TForm1 = class(TForm)
+    cmbCard: TComboBox;
     ComboCOM: TComboBox;
     IdleTimer1: TIdleTimer;
     Label1: TLabel;
+    Label2: TLabel;
     MainMenu1: TMainMenu;
     Memo1: TMemo;
-    mnuPortSelect: TMenuItem;
     mnuUploadHEX: TMenuItem;
     mnuCompile: TMenuItem;
     mnuCompileCore: TMenuItem;
@@ -27,6 +28,7 @@ type
     mnuFichier: TMenuItem;
     Panel1: TPanel;
     SynEdit1: TSynEdit;
+    procedure cmbCardChange(Sender: TObject);
     procedure FormActivate(Sender: TObject);
     procedure IdleTimer1Timer(Sender: TObject);
     procedure Memo1Change(Sender: TObject);
@@ -38,7 +40,7 @@ type
     procedure SynEdit1Change(Sender: TObject);
     //procedure JvCreateProcess1Terminate(Sender: TObject; ExitCode: DWORD);
   private
-    FPort:string;
+    FPort, Fbaud:string;
     FListOfStrings:TstringList;
     procedure Split(Delimiter: Char; Str: string) ;
     procedure ChangeLastLine(const S: string);
@@ -93,6 +95,7 @@ procedure Tform1.gereTexte2(const Txt: string);
 constructor TForm1.create(sender:Tobject) ;
   begin
    FListOfStrings:=Tstringlist.create;
+
 end;
 procedure TForm1.Split(Delimiter: Char; Str: string) ;
   begin
@@ -122,6 +125,13 @@ begin
  //memo2.clear;
   self.InitCommand('INIT');
   self.SynEdit1.Lines.LoadFromFile(getCurrentDir()+'/ino/'+getenv('userdomain')+'_'+getenv('username')+'_default.ino');
+  self.cmbCard.ItemIndex:=0;
+end;
+
+procedure TForm1.cmbCardChange(Sender: TObject);
+begin
+  if cmbCard.ItemIndex=0 then Fbaud:='115200';
+  if cmbCard.ItemIndex=1 then Fbaud:='57600';
 end;
 
 procedure TForm1.IdleTimer1Timer(Sender: TObject);
@@ -165,7 +175,7 @@ procedure TForm1.mnuUploadHEXClick(Sender: TObject);
 
 var s:string;
 begin
- s:= 'cmd /c cd '+getcurrentDir()+ ' & .\bat\uploadHEX.bat '+FPort;
+ s:= 'cmd /c cd '+getcurrentDir()+ ' & .\bat\uploadHEX.bat '+FPort+' '+Fbaud;
  memo1.lines.add(s);
  if FPort<> '' then execute(s,handler,true,nil);
 

@@ -176,6 +176,13 @@ Ardublockly.TOOLBOX_CORE_XML =
 '    <block type="time_millis"></block>' +
 '    <block type="time_micros"></block>' +
 '    <block type="infinite_loop"></block>' +
+'    <block type="grove_rtc">' +
+'      <value name="TIMES">' +
+'        <block type="math_number">' +
+'          <field name="NUM">1</field>' +
+'        </block>' +
+'      </value>' +
+'    </block>' +
 '  </category>' +
 '  <sep></sep>' +
 '  <category id="catAudio" name="Audio">' +

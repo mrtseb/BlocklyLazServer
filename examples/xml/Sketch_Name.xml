@@ -1,0 +1,68 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="grove_rtc_config" id="Et=v3vg=-Qp%RPs6`eQq" x="107" y="62">
+    <next>
+      <block type="grove_serial_lcd_iic" id="Z:j,=]?LdFHd[%cvtMV7">
+        <value name="TEXT">
+          <block type="text_join" id="I2G4rD2C_n!oes|e}G`:">
+            <mutation items="5"></mutation>
+            <value name="ADD0">
+              <block type="grove_rtc_get" id="Rj6BysFfi0J?7GA#(kt1">
+                <field name="TIMING">J</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="text" id=".7@}3*x/5.J/|EPg8T6E">
+                <field name="TEXT">/</field>
+              </block>
+            </value>
+            <value name="ADD2">
+              <block type="grove_rtc_get" id="-2#xnw!;VE71du9U,@}S">
+                <field name="TIMING">O</field>
+              </block>
+            </value>
+            <value name="ADD3">
+              <block type="text" id="*U8G2syl;AXRu:A=z,UF">
+                <field name="TEXT">/</field>
+              </block>
+            </value>
+            <value name="ADD4">
+              <block type="grove_rtc_get" id="35roXM}taIf52Xj#OgyS">
+                <field name="TIMING">A</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="TEXT2">
+          <block type="text_join" id=".gkUx7Pe7SG.*;q6U@=8">
+            <mutation items="5"></mutation>
+            <value name="ADD0">
+              <block type="grove_rtc_get" id="5w5=VyaE8W@L:+z/rk?D">
+                <field name="TIMING">J</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="text" id="I!+mh,wb///X],2ge%yZ">
+                <field name="TEXT">:</field>
+              </block>
+            </value>
+            <value name="ADD2">
+              <block type="grove_rtc_get" id="gJnM:7vVoZ]YH.c5+~p9">
+                <field name="TIMING">O</field>
+              </block>
+            </value>
+            <value name="ADD3">
+              <block type="text" id="(.J,Avb{EE=^_x*02|wg">
+                <field name="TEXT">:</field>
+              </block>
+            </value>
+            <value name="ADD4">
+              <block type="grove_rtc_get" id="Hs-;rP+2OMBLNf{Y1T6F">
+                <field name="TIMING">A</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </next>
+  </block>
+</xml>

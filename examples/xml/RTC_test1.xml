@@ -1,0 +1,31 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="grove_rtc" id="=a)/LfAep{1*Ni5)C9Et" x="183" y="154">
+    <field name="TIMING">H</field>
+    <value name="TIMES">
+      <block type="math_number" id="}Y?jYDTDWV90;6NP-@JS">
+        <field name="NUM">1</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="grove_relay" id="Sc#Je:kkstD2HHd7f,xp">
+        <field name="PIN">5</field>
+        <field name="STAT">HIGH</field>
+        <next>
+          <block type="time_delay" id=",fyAAj@A#veABHOTf0!6">
+            <value name="DELAY_TIME_MILI">
+              <block type="math_number" id=",Z|6-O+%+OO+!ecbYg2Y">
+                <field name="NUM">200</field>
+              </block>
+            </value>
+            <next>
+              <block type="grove_relay" id="|!K]+9KuKF{-~]OH|,qr">
+                <field name="PIN">5</field>
+                <field name="STAT">LOW</field>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

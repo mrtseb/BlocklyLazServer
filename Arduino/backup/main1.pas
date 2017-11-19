@@ -13,11 +13,13 @@ type
   { TForm1 }
 
   TForm1 = class(TForm)
+    cmbCard: TComboBox;
     ComboCOM: TComboBox;
     IdleTimer1: TIdleTimer;
+    Label1: TLabel;
+    Label2: TLabel;
     MainMenu1: TMainMenu;
     Memo1: TMemo;
-    mnuPortSelect: TMenuItem;
     mnuUploadHEX: TMenuItem;
     mnuCompile: TMenuItem;
     mnuCompileCore: TMenuItem;
@@ -92,6 +94,7 @@ procedure Tform1.gereTexte2(const Txt: string);
 constructor TForm1.create(sender:Tobject) ;
   begin
    FListOfStrings:=Tstringlist.create;
+
 end;
 procedure TForm1.Split(Delimiter: Char; Str: string) ;
   begin
@@ -121,6 +124,7 @@ begin
  //memo2.clear;
   self.InitCommand('INIT');
   self.SynEdit1.Lines.LoadFromFile(getCurrentDir()+'/ino/'+getenv('userdomain')+'_'+getenv('username')+'_default.ino');
+  self.cmbCard.ItemIndex:=0;
 end;
 
 procedure TForm1.IdleTimer1Timer(Sender: TObject);

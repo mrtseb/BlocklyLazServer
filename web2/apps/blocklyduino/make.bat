@@ -1,1 +1,0 @@
-c:\python27\python.exe build2.py core generators

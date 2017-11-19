@@ -34,6 +34,71 @@ goog.require('Blockly.Blocks');
 goog.require('Blockly.Types');
 
 
+Blockly.Blocks['grove_rtc_config'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("[RTC] Configuration");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(190);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['grove_rtc'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("toute les");
+    this.appendValueInput("TIMES")
+        .setCheck(null);
+    this.appendDummyInput()
+        .appendField(new Blockly.FieldDropdown([["heure(s)","H"], ["minute(s)","M"], ["seconde(s)","S"]]), "TIMING");
+    this.appendStatementInput("DO")
+        .setCheck(null)
+        .appendField("faire");
+    this.setInputsInline(true);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(190);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['grove_rtc_get'] = {
+  init: function() {
+  this.appendDummyInput()
+        .appendField("[RTC] retourner:")
+        .appendField(new Blockly.FieldDropdown([["jour","J"], ["mois","O"], ["annee","A"],["heure","H"], ["minute","M"], ["seconde","S"]]), "TIMING");
+  this.setOutput(true, 'String');
+  this.setColour(190);
+  this.setTooltip("");
+  this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['grove_rtc2'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("RTC: toute les");
+    this.appendValueInput("TIMES")
+        .setCheck(null);
+    this.appendDummyInput()
+        .appendField(new Blockly.FieldDropdown([["heure(s)","H"], ["minute(s)","M"], ["seconde(s)","S"]]), "TIMING");
+    this.appendStatementInput("DO")
+        .setCheck(null)
+        .appendField("faire");
+    this.setInputsInline(true);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(190);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+
 Blockly.Blocks['grove_led'] = {
   helpUrl: 'http://www.seeedstudio.com/wiki/index.php?title=GROVE_-_Starter_Bundle_V1.0b#LED',
   init: function() {
