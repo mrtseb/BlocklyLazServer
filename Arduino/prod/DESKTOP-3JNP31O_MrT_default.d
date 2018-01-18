@@ -11,7 +11,4 @@ prod\DESKTOP-3JNP31O_MrT_default.o: prod\DESKTOP-3JNP31O_MrT_default.cpp \
  hardware\arduino\avr\cores\arduino/Arduino.h \
  hardware\arduino\avr\variants\standard/pins_arduino.h \
  hardware\arduino\avr\libraries/Wire/wire.h \
- hardware\arduino\avr\cores\arduino/Stream.h libraries\TS/RTClib.h \
- hardware\arduino\avr\libraries/Wire/Wire.h \
- hardware\arduino\avr\libraries/SoftwareSerial/SoftwareSerial.h \
- libraries\TS/rgb_lcd.h hardware\arduino\avr\cores\arduino/Print.h
+ hardware\arduino\avr\cores\arduino/Stream.h libraries\TS/RTClib.h

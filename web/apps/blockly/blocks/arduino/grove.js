@@ -27,11 +27,78 @@
  * @author gasolin@gmail.com (Fred Lin)
  */
 'use strict';
-
 goog.provide('Blockly.Blocks.grove');
 
 goog.require('Blockly.Blocks');
 goog.require('Blockly.Types');
+
+
+Blockly.Blocks['meteo_patm'] = {
+  init: function() {
+    this.setColour(190);
+    this.appendDummyInput()
+        .appendField("BMP280")
+        .appendField("MES#")
+        .appendField(new Blockly.FieldDropdown([["Pression atm.", "pression"],["Temperature.", "temp"]]), "MESURE");
+    this.setOutput(true, 'Boolean');
+    this.setTooltip('Meteo');
+  }
+};
+
+Blockly.Blocks['grove_ultrasonic2'] = {
+    init: function() {
+	    this.setColour(190);
+        this.appendDummyInput()
+		.appendField("Ultrasonic2: Dist. en mm ")
+		.appendField("PIN#")
+        .appendField(new Blockly.FieldDropdown(Blockly.Arduino.Boards.selected.digitalPins), "PIN");
+		this.setOutput(true, 'Boolean');
+		
+	}
+}
+
+Blockly.Blocks['grove_ir_remote'] = {
+  /**
+   * Block for if/elseif/else condition.
+   * @this Blockly.Block
+   */
+  init: function() {
+    
+    this.setColour(190);
+    this.appendDummyInput()
+        .appendField("Si touche IR = ")
+        .appendField(new Blockly.FieldDropdown([
+		["HAUT","code_H"], ["BAS","code_B"], ["GAUCHE","code_G"], ["DROITE","code_D"], ["CONFIG","code_C"],
+		["A","codeA"], ["B","codeB"], ["C","codeC"], ["D","codeD"], ["E","codeE"], ["F","codeF"],
+		["0","code0"], ["1","code1"], ["2","code2"], ["3","code3"], ["4","code4"], ["5","code5"],
+		["6","code6"], ["7","code7"], ["8","code8"], ["9","code9"]		
+		]), "TOUCHE");
+	this.appendStatementInput('DO')
+        .appendField("Alors");
+		
+    this.setPreviousStatement(true);
+    this.setNextStatement(true);
+    
+   
+  }
+}
+
+Blockly.Blocks['grove_ir_config'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("[IR REMOTE] Configuration")
+		.appendField(new Blockly.FieldDropdown([
+		["2","2"], ["3","3"], ["4","4"],["5","5"], ["6","6"], ["7","7"],["8","8"], ["9","9"], ["10","10"],["11","11"],["12","12"], ["13","13"]]), "PORT");
+	this.appendStatementInput("DO")
+        .setCheck(null)
+        .appendField("faire");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(190);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
 
 
 Blockly.Blocks['grove_rtc_config'] = {
@@ -60,7 +127,7 @@ Blockly.Blocks['grove_rtc'] = {
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(190);
+    this.setColour(140);
  this.setTooltip("");
  this.setHelpUrl("");
   }

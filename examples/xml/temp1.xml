@@ -1,0 +1,50 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="serial_setup" id="ZWzFHQ64@q..WM`2Pcpp" x="8" y="68">
+    <field name="SERIAL_ID">Serial</field>
+    <field name="SPEED">9600</field>
+  </block>
+  <block type="arduino_functions" id="X?-=N?aZCm5STsR4=#o*" x="11" y="113">
+    <statement name="SETUP_FUNC">
+      <block type="serial_print" id="7_s1ghsL,10y1eb{/=dh">
+        <field name="SERIAL_ID">Serial</field>
+        <field name="NEW_LINE">TRUE</field>
+        <value name="CONTENT">
+          <block type="text" id="1d`.zZaHM2R.-:x/4k?H">
+            <field name="TEXT">DEBUT ...</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <statement name="LOOP_FUNC">
+      <block type="serial_print" id="E._6!]x4w3C^:s@:#|0/">
+        <field name="SERIAL_ID">Serial</field>
+        <field name="NEW_LINE">TRUE</field>
+        <value name="CONTENT">
+          <block type="text_join" id="TGs(ALOc[F(zQ%!ZiO42">
+            <mutation items="2"></mutation>
+            <value name="ADD0">
+              <block type="text" id="YhM,P,spYcf_:ehbYfO3">
+                <field name="TEXT">T: </field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="grove_dht11" id="FZj7=KJGgJ@QUh3bA*N#">
+                <field name="PIN">0</field>
+                <field name="MESURE">temp</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="time_delay" id="7[akF.Tj0I*{JsI#.Z10">
+            <value name="DELAY_TIME_MILI">
+              <block type="math_number" id="6_a_6sz{1k:7:61Q,M5J">
+                <field name="NUM">1000</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

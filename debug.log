@@ -1,5 +1,993 @@
-[1119/094656.475:INFO:CONSOLE(1877)] "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.", source: http://localhost:8080/apps/closure-library/closure/goog/base.js (1877)
-[1119/094657.354:INFO:CONSOLE(180)] "Localised text string ID "catMbot" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
-[1119/094657.354:INFO:CONSOLE(180)] "Localised text string ID "catRtc" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
-[1119/094657.435:INFO:CONSOLE(180)] "Localised text string ID "uploadSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
-[1119/094721.354:INFO:CONSOLE(180)] "Localised text string ID "uploadingSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0115/204431.427:INFO:CONSOLE(1877)] "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.", source: http://localhost:8080/apps/closure-library/closure/goog/base.js (1877)
+[0115/204434.296:INFO:CONSOLE(180)] "Localised text string ID "catMeteo" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0115/204434.297:INFO:CONSOLE(180)] "Localised text string ID "catMbot" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0115/204434.297:INFO:CONSOLE(180)] "Localised text string ID "catRtc" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0115/204434.519:INFO:CONSOLE(180)] "Localised text string ID "uploadSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/091207.069:INFO:CONSOLE(1877)] "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.", source: http://localhost:8080/apps/closure-library/closure/goog/base.js (1877)
+[0117/091208.446:INFO:CONSOLE(180)] "Localised text string ID "catMeteo" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/091208.446:INFO:CONSOLE(180)] "Localised text string ID "catMbot" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/091208.446:INFO:CONSOLE(180)] "Localised text string ID "catRtc" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/091208.509:INFO:CONSOLE(180)] "Localised text string ID "uploadSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/091745.713:INFO:CONSOLE(1877)] "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.", source: http://localhost:8080/apps/closure-library/closure/goog/base.js (1877)
+[0117/091746.412:INFO:CONSOLE(180)] "Localised text string ID "catMeteo" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/091746.412:INFO:CONSOLE(180)] "Localised text string ID "catMbot" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/091746.412:INFO:CONSOLE(180)] "Localised text string ID "catRtc" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/091746.457:INFO:CONSOLE(180)] "Localised text string ID "uploadSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/091748.698:INFO:CONSOLE(86)] "Uncaught AssertionError: Assertion failed: Error: "grove_ultrasonic2" is an unknown language block.", source: http://localhost:8080/apps/closure-library/closure/goog/asserts/asserts.js (86)
+[0117/091941.637:INFO:CONSOLE(1877)] "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.", source: http://localhost:8080/apps/closure-library/closure/goog/base.js (1877)
+[0117/091942.415:INFO:CONSOLE(180)] "Localised text string ID "catMeteo" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/091942.415:INFO:CONSOLE(180)] "Localised text string ID "catMbot" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/091942.415:INFO:CONSOLE(180)] "Localised text string ID "catRtc" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/091942.477:INFO:CONSOLE(180)] "Localised text string ID "uploadSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/092034.665:INFO:CONSOLE(1877)] "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.", source: http://localhost:8080/apps/closure-library/closure/goog/base.js (1877)
+[0117/092035.426:INFO:CONSOLE(180)] "Localised text string ID "catMeteo" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/092035.426:INFO:CONSOLE(180)] "Localised text string ID "catMbot" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/092035.426:INFO:CONSOLE(180)] "Localised text string ID "catRtc" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/092035.489:INFO:CONSOLE(180)] "Localised text string ID "uploadSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/092040.103:INFO:CONSOLE(86)] "Uncaught AssertionError: Assertion failed: Language "Arduino" does not know how to generate code for block type "grove_ultrasonic2".", source: http://localhost:8080/apps/closure-library/closure/goog/asserts/asserts.js (86)
+[0117/092041.270:INFO:CONSOLE(86)] "Uncaught AssertionError: Assertion failed: Language "Arduino" does not know how to generate code for block type "grove_ultrasonic2".", source: http://localhost:8080/apps/closure-library/closure/goog/asserts/asserts.js (86)
+[0117/092149.868:INFO:CONSOLE(1877)] "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.", source: http://localhost:8080/apps/closure-library/closure/goog/base.js (1877)
+[0117/092150.661:INFO:CONSOLE(180)] "Localised text string ID "catMeteo" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/092150.661:INFO:CONSOLE(180)] "Localised text string ID "catMbot" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/092150.661:INFO:CONSOLE(180)] "Localised text string ID "catRtc" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/092150.711:INFO:CONSOLE(180)] "Localised text string ID "uploadSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/092150.806:INFO:CONSOLE(0)] "Uncaught (in promise) AbortError: The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22", source: http://localhost:8080/apps/ardublockly/index.html (0)
+[0117/092152.035:INFO:CONSOLE(86)] "Uncaught AssertionError: Assertion failed: Remove output connection prior to adding previous connection.", source: http://localhost:8080/apps/closure-library/closure/goog/asserts/asserts.js (86)
+[0117/092228.427:INFO:CONSOLE(1877)] "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.", source: http://localhost:8080/apps/closure-library/closure/goog/base.js (1877)
+[0117/092229.191:INFO:CONSOLE(180)] "Localised text string ID "catMeteo" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/092229.191:INFO:CONSOLE(180)] "Localised text string ID "catMbot" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/092229.191:INFO:CONSOLE(180)] "Localised text string ID "catRtc" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/092229.253:INFO:CONSOLE(180)] "Localised text string ID "uploadSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/092237.744:INFO:CONSOLE(86)] "Uncaught AssertionError: Assertion failed: Language "Arduino" does not know how to generate code for block type "grove_ultrasonic2".", source: http://localhost:8080/apps/closure-library/closure/goog/asserts/asserts.js (86)
+[0117/092239.369:INFO:CONSOLE(86)] "Uncaught AssertionError: Assertion failed: Language "Arduino" does not know how to generate code for block type "grove_ultrasonic2".", source: http://localhost:8080/apps/closure-library/closure/goog/asserts/asserts.js (86)
+[0117/092308.807:INFO:CONSOLE(1877)] "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.", source: http://localhost:8080/apps/closure-library/closure/goog/base.js (1877)
+[0117/092309.602:INFO:CONSOLE(180)] "Localised text string ID "catMeteo" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/092309.603:INFO:CONSOLE(180)] "Localised text string ID "catMbot" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/092309.603:INFO:CONSOLE(180)] "Localised text string ID "catRtc" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/092309.664:INFO:CONSOLE(180)] "Localised text string ID "uploadSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/092309.702:INFO:CONSOLE(0)] "Uncaught (in promise) AbortError: The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22", source: http://localhost:8080/apps/ardublockly/index.html (0)
+[0117/092309.702:INFO:CONSOLE(0)] "Uncaught (in promise) AbortError: The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22", source: http://localhost:8080/apps/ardublockly/index.html (0)
+[0117/092309.702:INFO:CONSOLE(0)] "Uncaught (in promise) AbortError: The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22", source: http://localhost:8080/apps/ardublockly/index.html (0)
+[0117/092315.645:INFO:CONSOLE(86)] "Uncaught AssertionError: Assertion failed: Language "Arduino" does not know how to generate code for block type "grove_ultrasonic2".", source: http://localhost:8080/apps/closure-library/closure/goog/asserts/asserts.js (86)
+[0117/092317.478:INFO:CONSOLE(86)] "Uncaught AssertionError: Assertion failed: Language "Arduino" does not know how to generate code for block type "grove_ultrasonic2".", source: http://localhost:8080/apps/closure-library/closure/goog/asserts/asserts.js (86)
+[0117/133938.914:INFO:CONSOLE(1877)] "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.", source: http://localhost:8080/apps/closure-library/closure/goog/base.js (1877)
+[0117/133939.820:INFO:CONSOLE(180)] "Localised text string ID "catMeteo" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/133939.820:INFO:CONSOLE(180)] "Localised text string ID "catMbot" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/133939.820:INFO:CONSOLE(180)] "Localised text string ID "catRtc" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/133939.895:INFO:CONSOLE(180)] "Localised text string ID "uploadSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/134238.226:INFO:CONSOLE(1877)] "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.", source: http://localhost:8080/apps/closure-library/closure/goog/base.js (1877)
+[0117/134239.037:INFO:CONSOLE(180)] "Localised text string ID "catMeteo" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/134239.037:INFO:CONSOLE(180)] "Localised text string ID "catMbot" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/134239.037:INFO:CONSOLE(180)] "Localised text string ID "catRtc" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/134239.098:INFO:CONSOLE(180)] "Localised text string ID "uploadSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/134427.931:INFO:CONSOLE(1877)] "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.", source: http://localhost:8080/apps/closure-library/closure/goog/base.js (1877)
+[0117/134428.693:INFO:CONSOLE(180)] "Localised text string ID "catMeteo" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/134428.693:INFO:CONSOLE(180)] "Localised text string ID "catMbot" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/134428.693:INFO:CONSOLE(180)] "Localised text string ID "catRtc" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0117/134428.758:INFO:CONSOLE(180)] "Localised text string ID "uploadSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/104622.915:INFO:CONSOLE(1877)] "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.", source: http://localhost:8080/apps/closure-library/closure/goog/base.js (1877)
+[0118/104624.479:INFO:CONSOLE(180)] "Localised text string ID "catMeteo" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/104624.479:INFO:CONSOLE(180)] "Localised text string ID "catMbot" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/104624.479:INFO:CONSOLE(180)] "Localised text string ID "catRtc" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/104624.571:INFO:CONSOLE(180)] "Localised text string ID "uploadSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/105709.895:INFO:CONSOLE(180)] "Localised text string ID "uploadingSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/105817.043:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/105822.047:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/105918.350:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/105921.236:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/105926.220:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/105926.240:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/105931.223:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/105931.243:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/105936.226:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/105936.246:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/105941.229:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/105941.248:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/105946.232:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/105946.252:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/105951.234:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/105951.255:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/105956.238:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/105956.258:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110001.242:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110001.261:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110006.245:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110006.264:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110011.248:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110011.266:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110016.252:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110016.269:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110021.255:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110021.273:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110026.258:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110026.275:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110031.261:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110031.279:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110036.264:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110036.283:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110041.267:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110041.286:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110046.272:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110046.290:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110051.283:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110051.301:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110056.296:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110056.314:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110101.306:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110101.327:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110106.321:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110106.338:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110111.333:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110111.351:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110116.345:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110116.364:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110121.357:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110121.377:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110126.370:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110126.390:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110131.384:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110131.401:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110136.396:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110136.415:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110141.410:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110141.429:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110146.422:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110146.441:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110151.435:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110151.450:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110156.450:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110156.460:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110201.475:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110206.487:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110211.499:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110216.513:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110221.524:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110226.537:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110231.548:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110236.561:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110241.572:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110246.583:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110251.595:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110256.606:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110301.619:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110306.624:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110311.639:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110316.651:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110321.667:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110326.685:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110331.703:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110336.717:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110341.733:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110346.745:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110351.755:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110356.768:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110401.782:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110406.794:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110411.807:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110416.820:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110421.833:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110426.845:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110431.858:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110436.869:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110441.884:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110446.897:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110451.909:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110456.921:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110501.934:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110506.949:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110511.961:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110516.976:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110521.989:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110527.004:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110532.016:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110537.028:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110542.046:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110547.060:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110552.074:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110557.082:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110602.097:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110607.110:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110612.124:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110617.136:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110622.150:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110627.163:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110632.179:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110637.191:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110642.205:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110647.217:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110652.229:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110657.244:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110702.257:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110707.274:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110712.286:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110717.300:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110722.312:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110727.328:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110732.340:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110737.352:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110742.365:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110747.379:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110752.393:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110757.405:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110802.418:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110807.429:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110812.444:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110817.456:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110822.468:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110827.480:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110832.492:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110837.505:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110842.516:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110847.526:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110852.543:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110857.554:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110902.566:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110907.578:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110912.585:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110917.588:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110922.600:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110927.611:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110932.632:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110937.643:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110942.656:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110947.668:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110952.674:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/110957.689:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111002.695:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111007.704:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111012.709:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111017.721:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111022.733:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111027.743:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111032.755:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111037.769:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111042.781:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111047.794:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111052.805:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111057.822:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111102.838:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111107.854:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111112.865:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111117.879:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111122.884:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111127.896:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111132.910:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111137.922:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111142.934:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111147.949:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111152.961:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111157.974:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111202.985:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111207.998:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111213.012:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111218.023:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111223.035:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111228.046:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111233.061:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111238.073:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111243.085:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111248.098:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111253.110:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111258.122:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111303.138:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111308.149:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111313.162:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111318.173:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111323.184:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111328.198:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111333.210:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111338.226:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111343.238:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111348.249:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111353.260:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111358.270:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111403.283:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111408.295:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111413.310:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111418.330:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111423.344:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111428.357:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111433.370:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111438.382:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111443.389:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111448.395:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111453.407:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111458.420:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111503.429:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111508.442:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111513.456:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111518.468:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111523.481:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111528.494:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111533.507:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111538.518:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111543.528:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111548.540:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111553.555:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111558.567:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111603.580:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111608.592:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111613.601:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111618.615:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111623.627:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111628.639:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111633.651:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111638.662:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111643.673:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111648.685:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111653.699:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111658.710:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111703.725:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111708.737:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111713.751:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111718.767:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111723.780:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111728.793:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111733.808:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111738.824:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111743.841:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111748.859:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111753.872:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111758.878:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111803.887:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111808.896:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111813.907:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111818.922:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111823.937:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111828.951:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111833.963:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111838.978:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111843.991:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111849.001:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111854.013:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111859.025:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111904.040:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111909.051:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111914.066:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111919.078:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111924.091:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111929.103:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111934.114:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111939.126:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111944.139:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111949.151:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111954.164:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/111959.174:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112004.186:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112009.202:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112014.214:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112019.225:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112024.237:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112029.249:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112034.264:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112039.274:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112044.287:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112049.299:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112054.310:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112059.328:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112104.343:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112109.357:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112114.362:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112119.366:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112124.377:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112129.382:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112134.391:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112139.397:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112144.412:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112149.422:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112154.437:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112159.450:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112204.461:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112209.474:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112214.485:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112219.497:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112224.509:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112229.521:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112234.535:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112239.548:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112244.559:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112249.572:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112254.583:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112259.596:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112304.610:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112309.623:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112314.638:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112319.651:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112324.666:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112329.676:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112334.689:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112339.698:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112344.709:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112349.722:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112354.735:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112359.748:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112404.762:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112409.773:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112414.786:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112419.798:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112424.808:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112429.825:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112434.839:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112439.855:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112444.870:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112449.879:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112454.890:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112459.902:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112504.915:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112509.928:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112514.940:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112519.954:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112524.967:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112529.979:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112534.990:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112540.003:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112545.013:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112550.023:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112555.035:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112600.046:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112605.056:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112610.071:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112615.081:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112620.092:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112625.107:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112630.118:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112635.130:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112640.142:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112645.153:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112650.166:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112655.180:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112700.194:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112705.204:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112710.217:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112715.227:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112720.238:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112725.252:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112730.265:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112735.276:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112740.289:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112745.301:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112750.316:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112755.330:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112800.343:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112805.352:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112810.362:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112815.373:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112820.382:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112825.395:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112830.410:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112835.422:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112840.436:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112845.446:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112850.459:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112855.472:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112900.485:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112905.499:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112910.509:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112915.522:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112920.534:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112925.549:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112930.562:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112935.573:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112940.587:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112945.598:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112950.609:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/112955.622:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113000.631:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113005.647:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113010.660:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113015.674:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113020.686:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113025.698:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113030.710:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113035.722:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113040.736:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113045.747:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113050.758:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113055.772:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113100.783:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113105.797:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113110.812:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113115.824:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113120.843:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113125.856:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113130.866:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113135.878:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113140.889:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113145.904:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113150.910:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113155.922:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113200.935:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113205.945:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113210.960:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113215.970:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113220.981:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113225.996:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113231.009:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113236.020:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113241.033:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113246.046:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113251.058:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113256.073:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113301.082:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113306.096:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113311.107:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113316.119:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113321.133:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113326.145:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113331.158:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113336.168:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113341.179:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113346.192:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113351.204:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113356.215:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113401.228:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113406.238:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113411.249:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113416.262:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113421.273:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113426.287:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113431.299:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113436.315:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113441.329:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113446.342:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113451.358:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113456.371:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113501.378:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113506.385:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113511.394:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113516.406:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113521.419:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113526.429:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113531.441:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113536.451:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113541.459:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113546.473:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113551.487:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113556.500:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113601.515:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113606.526:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113611.540:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113616.553:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113621.562:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113626.575:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113631.585:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113636.600:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113641.611:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113646.623:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113651.637:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113656.649:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113701.663:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113706.673:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113711.685:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113716.697:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113721.707:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113726.722:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113731.735:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113736.747:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113741.761:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113746.772:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113751.785:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113756.796:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113801.810:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113806.827:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113811.842:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113816.850:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113821.860:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113826.875:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113831.884:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113836.888:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113841.904:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113846.914:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113851.926:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113856.939:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113901.953:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113906.963:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113911.977:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113916.988:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113921.991:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/113926.994:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/125220.406:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/125220.412:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/125220.420:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/125220.437:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/133549.045:INFO:CONSOLE(180)] "Localised text string ID "uploadingSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/133635.462:INFO:CONSOLE(180)] "Localised text string ID "uploadingSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/141627.624:INFO:CONSOLE(1877)] "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.", source: http://localhost:8080/apps/closure-library/closure/goog/base.js (1877)
+[0118/141628.544:INFO:CONSOLE(180)] "Localised text string ID "catMeteo" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/141628.544:INFO:CONSOLE(180)] "Localised text string ID "catMbot" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/141628.544:INFO:CONSOLE(180)] "Localised text string ID "catRtc" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/141628.637:INFO:CONSOLE(180)] "Localised text string ID "uploadSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/141821.618:INFO:CONSOLE(1877)] "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.", source: http://localhost:8080/apps/closure-library/closure/goog/base.js (1877)
+[0118/141822.392:INFO:CONSOLE(180)] "Localised text string ID "catMeteo" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/141822.393:INFO:CONSOLE(180)] "Localised text string ID "catMbot" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/141822.393:INFO:CONSOLE(180)] "Localised text string ID "catRtc" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/141822.462:INFO:CONSOLE(180)] "Localised text string ID "uploadSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/141920.702:INFO:CONSOLE(180)] "Localised text string ID "uploadingSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/153831.622:INFO:CONSOLE(180)] "Localised text string ID "uploadingSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/154141.296:INFO:CONSOLE(180)] "Localised text string ID "uploadingSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/154551.070:INFO:CONSOLE(180)] "Localised text string ID "uploadingSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/155901.967:INFO:CONSOLE(180)] "Localised text string ID "uploadingSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/160635.853:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160635.906:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160638.092:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160643.277:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160645.904:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160649.354:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160710.497:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160714.093:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160718.164:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160719.288:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160722.249:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160738.122:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160739.228:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160740.728:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160742.062:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160749.094:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160757.810:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160758.999:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160801.998:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160803.594:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160806.187:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160809.370:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160812.867:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160814.930:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160816.750:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160816.968:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160817.164:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160833.028:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160834.500:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160836.624:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160836.805:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160836.968:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160837.164:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160838.071:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160838.218:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160838.374:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160838.571:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160839.352:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160839.571:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160839.728:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160839.966:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160846.133:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160850.092:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160852.478:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160856.245:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160858.196:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160916.466:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160917.310:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160919.571:INFO:CONSOLE(180)] "Localised text string ID "uploadingSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/160919.571:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/160939.452:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/161003.478:INFO:CONSOLE(1877)] "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.", source: http://localhost:8080/apps/closure-library/closure/goog/base.js (1877)
+[0118/161004.278:INFO:CONSOLE(180)] "Localised text string ID "catMeteo" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/161004.278:INFO:CONSOLE(180)] "Localised text string ID "catMbot" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/161004.278:INFO:CONSOLE(180)] "Localised text string ID "catRtc" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/161004.341:INFO:CONSOLE(180)] "Localised text string ID "uploadSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/161019.742:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/161019.768:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/161021.274:INFO:CONSOLE(180)] "Localised text string ID "uploadingSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/161021.301:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/161047.483:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/161050.982:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/161054.826:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/161055.794:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/161056.961:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/161102.150:INFO:CONSOLE(1877)] "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.", source: http://localhost:8080/apps/closure-library/closure/goog/base.js (1877)
+[0118/161102.966:INFO:CONSOLE(180)] "Localised text string ID "catMeteo" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/161102.966:INFO:CONSOLE(180)] "Localised text string ID "catMbot" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/161102.966:INFO:CONSOLE(180)] "Localised text string ID "catRtc" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/161103.060:INFO:CONSOLE(180)] "Localised text string ID "uploadSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/161103.091:INFO:CONSOLE(0)] "Uncaught (in promise) AbortError: The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22", source: http://localhost:8080/apps/ardublockly/index.html (0)
+[0118/161103.127:INFO:CONSOLE(0)] "Uncaught (in promise) AbortError: The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22", source: http://localhost:8080/apps/ardublockly/index.html (0)
+[0118/161103.127:INFO:CONSOLE(0)] "Uncaught (in promise) AbortError: The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22", source: http://localhost:8080/apps/ardublockly/index.html (0)
+[0118/161107.249:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/161107.759:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/161114.717:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/161116.061:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/161117.198:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/161137.340:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/161137.351:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/161142.155:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/161142.883:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/161143.321:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/161156.840:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/161158.966:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/161200.570:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/161208.729:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/161209.104:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/161230.336:INFO:CONSOLE(180)] "Localised text string ID "uploadingSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/161300.290:INFO:CONSOLE(180)] "Localised text string ID "uploadingSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/161827.060:INFO:CONSOLE(180)] "Localised text string ID "uploadingSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/161918.181:INFO:CONSOLE(180)] "Localised text string ID "uploadingSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/162117.070:INFO:CONSOLE(180)] "Localised text string ID "uploadingSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/162300.904:INFO:CONSOLE(180)] "Localised text string ID "uploadingSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/162817.986:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/162822.995:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/162828.003:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/162833.011:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/162838.018:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/162843.025:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/162848.032:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/162853.036:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/162858.046:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/162903.060:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/162908.068:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/162913.071:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/162918.079:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/162923.082:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/162928.095:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/162933.104:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/162938.107:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/162943.116:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/162948.123:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/162953.130:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/162958.141:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163003.144:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163008.154:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163013.161:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163018.164:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163023.166:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163028.171:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163033.184:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163038.190:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163043.196:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163048.199:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163053.200:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163058.204:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163103.207:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163108.209:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163113.213:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163118.217:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163123.222:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163128.225:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163133.227:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163138.231:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163143.237:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163148.240:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163153.246:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163158.252:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163203.256:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163208.261:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163213.267:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163218.271:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163218.982:INFO:CONSOLE(180)] "Localised text string ID "uploadingSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/163223.281:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163226.545:INFO:CONSOLE(180)] "Localised text string ID "uploadingSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/163228.289:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163233.296:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163238.300:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163243.306:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163248.312:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163253.315:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163258.324:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163303.326:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163308.336:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163313.345:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163318.353:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163323.359:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163328.368:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163333.377:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163338.386:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163343.391:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163348.402:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163351.055:INFO:CONSOLE(180)] "Localised text string ID "uploadingSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/163353.407:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163358.417:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163403.425:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163408.433:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163413.437:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163418.445:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163423.450:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163428.455:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163433.463:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163438.471:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163443.474:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163448.481:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163453.486:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163458.494:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163503.503:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163508.508:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163513.517:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163518.526:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163523.533:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163528.542:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163533.551:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163538.556:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163543.564:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163548.575:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163553.585:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163558.594:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163603.605:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163608.612:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163613.621:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163618.633:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163623.641:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163628.644:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163633.647:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163638.650:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163643.661:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163648.675:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163653.679:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163658.689:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163703.696:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163708.700:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163713.702:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163718.706:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163723.710:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163728.713:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163733.715:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163738.720:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163743.722:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163748.726:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163753.730:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163758.733:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163803.737:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163808.740:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163813.743:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163818.746:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163823.755:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163828.759:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/163833.765:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/164201.562:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/164202.291:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/164206.696:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/164213.966:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/164229.091:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/164230.321:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/164235.010:INFO:CONSOLE(119)] "Uncaught ReferenceError: code is not defined", source: http://localhost:8080/apps/blockly/generators/arduino/grove.js (119)
+[0118/165345.243:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165346.416:INFO:CONSOLE(1877)] "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.", source: http://localhost:8080/apps/closure-library/closure/goog/base.js (1877)
+[0118/165347.326:INFO:CONSOLE(180)] "Localised text string ID "catMeteo" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/165347.326:INFO:CONSOLE(180)] "Localised text string ID "catMbot" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/165347.326:INFO:CONSOLE(180)] "Localised text string ID "catRtc" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/165347.399:INFO:CONSOLE(180)] "Localised text string ID "uploadSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/165350.251:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165355.255:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165400.259:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165405.263:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165410.266:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165415.274:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165420.276:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165425.285:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165430.289:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165435.299:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165440.309:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165445.312:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165450.316:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165455.324:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165500.332:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165505.340:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165510.346:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165515.356:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165520.361:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165525.365:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165530.372:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165535.381:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165540.389:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165545.395:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165550.399:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165555.411:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165600.423:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165605.432:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165610.442:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165615.452:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165620.456:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165625.459:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165630.466:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165635.475:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165640.484:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165645.495:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165650.505:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165655.516:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165700.521:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165705.529:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165710.538:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165715.543:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165720.548:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165725.556:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165730.563:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165735.573:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165740.583:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165745.590:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165750.593:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165755.600:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165800.611:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165805.614:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165810.622:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165815.634:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165820.641:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165825.650:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165830.659:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165835.668:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165840.679:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165845.690:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165850.697:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165855.706:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165900.711:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165905.720:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165910.723:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165915.732:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165920.736:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165925.741:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165930.744:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165935.749:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165940.751:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165945.755:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165950.758:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/165955.760:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170000.764:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170005.766:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170010.769:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170015.772:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170020.776:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170025.778:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170030.780:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170035.841:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170040.852:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170045.856:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170050.860:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170055.862:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170100.865:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170105.871:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170110.877:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170115.886:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170120.895:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170125.906:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170130.909:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170135.916:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170140.921:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170145.925:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170150.928:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170155.934:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170200.939:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170205.942:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170210.948:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170215.950:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170220.954:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170225.957:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170230.962:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170235.966:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170240.969:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170245.979:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170250.982:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170255.994:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170301.001:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170306.010:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170311.019:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170316.027:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170321.033:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170326.043:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170331.050:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170336.059:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170341.064:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170346.075:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170351.084:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170351.544:INFO:CONSOLE(1877)] "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.", source: http://localhost:8080/apps/closure-library/closure/goog/base.js (1877)
+[0118/170352.231:INFO:CONSOLE(180)] "Localised text string ID "catMeteo" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/170352.232:INFO:CONSOLE(180)] "Localised text string ID "catMbot" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/170352.232:INFO:CONSOLE(180)] "Localised text string ID "catRtc" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/170352.274:INFO:CONSOLE(180)] "Localised text string ID "uploadSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/170352.295:INFO:CONSOLE(0)] "Uncaught (in promise) AbortError: The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22", source: http://localhost:8080/apps/ardublockly/index.html (0)
+[0118/170352.295:INFO:CONSOLE(0)] "Uncaught (in promise) AbortError: The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22", source: http://localhost:8080/apps/ardublockly/index.html (0)
+[0118/170352.295:INFO:CONSOLE(0)] "Uncaught (in promise) AbortError: The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22", source: http://localhost:8080/apps/ardublockly/index.html (0)
+[0118/170356.089:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170401.098:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170406.109:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170411.120:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170416.128:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170421.138:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170426.145:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170431.154:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170436.163:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170441.169:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/170446.176:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0118/192751.531:INFO:CONSOLE(1877)] "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.", source: http://localhost:8080/apps/closure-library/closure/goog/base.js (1877)
+[0118/192752.623:INFO:CONSOLE(180)] "Localised text string ID "catMeteo" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/192752.623:INFO:CONSOLE(180)] "Localised text string ID "catMbot" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/192752.623:INFO:CONSOLE(180)] "Localised text string ID "catRtc" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/192752.713:INFO:CONSOLE(180)] "Localised text string ID "uploadSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/192938.477:INFO:CONSOLE(1877)] "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.", source: http://localhost:8080/apps/closure-library/closure/goog/base.js (1877)
+[0118/192939.384:INFO:CONSOLE(180)] "Localised text string ID "catMeteo" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/192939.384:INFO:CONSOLE(180)] "Localised text string ID "catMbot" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/192939.384:INFO:CONSOLE(180)] "Localised text string ID "catRtc" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)
+[0118/192939.445:INFO:CONSOLE(180)] "Localised text string ID "uploadSketch" does not exists!", source: http://localhost:8080/apps/ardublockly/ardublockly_lang.js (180)

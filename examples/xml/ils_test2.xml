@@ -1,0 +1,70 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="serial_setup" id="9ZdL-CS(/s#07HulyW[U" x="-96" y="68">
+    <field name="SERIAL_ID">Serial</field>
+    <field name="SPEED">9600</field>
+  </block>
+  <block type="arduino_functions" id="f6E4x(l!dmknEO5yQwK=" x="-66" y="167">
+    <statement name="SETUP_FUNC">
+      <block type="grove_serial_lcd_iic" id="HW[j)mgDxQwLql]Cc_90">
+        <value name="TEXT">
+          <block type="text" id="`s6?zAb,vB9pY(oW18_S">
+            <field name="TEXT">?</field>
+          </block>
+        </value>
+        <value name="TEXT2">
+          <block type="text" id="@HFn72q8y?W(2cO:H:XS">
+            <field name="TEXT"> </field>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <statement name="LOOP_FUNC">
+      <block type="variables_set" id="8C|/Vw+5#O`?5~dmAIwV">
+        <field name="VAR">variable</field>
+        <value name="VALUE">
+          <block type="variables_set_type" id="!rO3.uh8S2vXwM9CAXjy">
+            <field name="VARIABLE_SETTYPE_TYPE">NUMBER</field>
+            <value name="VARIABLE_SETTYPE_INPUT">
+              <block type="io_digitalread" id="k+oN|PRZHbTA!cZ2[@|=">
+                <field name="PIN">4</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id="}~G1YWm?oR56EOBq25=3">
+            <value name="IF0">
+              <block type="logic_compare" id="yBln=X3.ZCxaYz^@jzhA">
+                <field name="OP">NEQ</field>
+                <value name="A">
+                  <block type="variables_get" id="Wti)@mCG+#(r:Kx*NDgE">
+                    <field name="VAR">variable</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="|~n-z=*4YEsnMwO[cDT?">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="grove_serial_lcd_iic" id="XL2xw@~Sl%R6YNWk/uo)">
+                <value name="TEXT">
+                  <block type="variables_get" id="MK%a^nE+1j8MJ}OU`+^t">
+                    <field name="VAR">variable</field>
+                  </block>
+                </value>
+                <value name="TEXT2">
+                  <block type="text" id="YZ:=2z]f|y2c7,/cTbl7">
+                    <field name="TEXT"> </field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

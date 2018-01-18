@@ -4,13 +4,9 @@
 
 RTC_DS1307 rtc;
 
-#include <Wire.h>
+DateTime now;
 
-#include <SoftwareSerial.h>
-
-#include "rgb_lcd.h"
-
-rgb_lcd rgbLcd;
+DateTime depart;
 
 
 void setup() {
@@ -20,17 +16,20 @@ void setup() {
   if (! rtc.isrunning()) {
     rtc.adjust(DateTime(2014, 1, 21, 3, 0, 0));
   }
+  else {
+    depart = rtc.now();
+  }
 
-  rgbLcd.begin(16,2);
-
+  pinMode(2, OUTPUT);
 }
 
 void loop() {
   DateTime now = rtc.now();
-  rgbLcd.setCursor(0,0);
-  rgbLcd.print((String(now.day()) + String("/") + String(now.month()) + String("/") + String(now.year())));
-  rgbLcd.setCursor(0,1);
-  rgbLcd.print((String(now.hour()) + String(":") + String(now.minute()) + String(":") + String(now.second())));
-  delay(1000);
+  now = rtc.now();
+  if ((now.unixtime() - depart.unixtime()) % (180) == 0) {
+    digitalWrite(2,HIGH);
+    delay(60000);
+    digitalWrite(2,LOW);
+  }
 
 }

@@ -16,7 +16,75 @@ goog.require('Blockly.Arduino');
 // si (now.unixtime - depart.unixtime) % 1 = 0 alors 1 SEC DE PASSEE
 // si (now.unixtime - depart.unixtime) % 60 = 0 alors 1 MIN DE PASSEE
 // si (now.unixtime - depart.unixtime) % 60*60 = 0 alors 1 H DE PASSEE
+
+Blockly.Arduino.grove_ultrasonic2 = function(block) {
+ 
+  var dd_pin = this.getFieldValue('PIN'); 
+ 
+  Blockly.Arduino.definitions_['define_ultrasonic2_cm'] = '#include <Ultrasonic2.h>\n'
++'Ultrasonic2 ultrasonic('+dd_pin+','+(dd_pin-1)+');\n';
+  var code;
+  code='(ultrasonic.Timing() / 2) * (340.0 / 1000)';               
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
+}
+ 
+Blockly.Arduino.meteo_patm = function(block) {
+  
+  Blockly.Arduino.definitions_['define_bmp280_1'] = '#include <Wire.h>\n'
++'#include <SPI.h>\n'
++'#include <Adafruit_Sensor.h>\n'
++'#include <Adafruit_BMP280.h>\n'
++'Adafruit_BMP280 bmp;\n';  
+  
+  var dropdown_mes = this.getFieldValue('MESURE');
+  Blockly.Arduino.setups_['setup_bmp280'] = 
+ 'if (!bmp.begin()) {\n'
++'    Serial.println(("Could not find a valid BMP280 sensor, check wiring!"));\n'
++'    while (1);\n'
++'  }\n';
+  var code;
+  if (dropdown_mes == 'temp') {
+	  code = 'bmp.readTemperature()';
+  }
+  if (dropdown_mes == 'pression') {
+	  code = 'bmp.readPressure()';
+  }
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
+} 
+ 
+Blockly.Arduino.grove_ir_remote  = function(block) {
+	var touche=this.getFieldValue('TOUCHE');
+	var branch = Blockly.Arduino.statementToCode(block, 'DO');
+    var code='if (value=='+touche+') {\n' +
+branch +       
+'}\n';
+	return code;
+} 
+ 
+Blockly.Arduino.grove_ir_config = function(block) {
+	
+	var port=this.getFieldValue('PORT');
+	var branch = Blockly.Arduino.statementToCode(block, 'DO');
+	
+	Blockly.Arduino.definitions_['define_grove_ir_config'] = '#include <IRremote.h>\n' +
+'#include "makeblock_codes.h"\n' +
+'decode_results signals;\n' +	
+'IRrecv irrecv('+port+');\n';
+
+
+Blockly.Arduino.setups_['setup_grove_ir_config'] = 'irrecv.enableIRIn();\n';
    
+  var code='if (irrecv.decode(&signals)) {\n' +
+'unsigned int value = signals.value;\n' +
+branch +
+'irrecv.resume();\n' +
+'}\n';
+
+  return code;
+	
+}
+
+ 
 Blockly.Arduino.grove_rtc = function(block) {
 	
 	Blockly.Arduino.definitions_['define_rtclib_current'] = 'long currentTime;\n';
@@ -42,7 +110,8 @@ Blockly.Arduino.grove_rtc = function(block) {
 	    plus = times*60*60;
       }
 
-  var code = 
+    var code;
+	code=
 'currentTime = getLastTime();\n'+
 'if (currentTime % ('+plus+') == 0) {\n' +
 branch +

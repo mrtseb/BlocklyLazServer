@@ -1,11 +1,11 @@
 object Form1: TForm1
-  Left = -8
+  Left = 11
   Height = 837
-  Top = -8
-  Width = 1600
+  Top = 122
+  Width = 1588
   Caption = 'BlocklyLaz - sebastien.tack@ac-caen.fr'
-  ClientHeight = 837
-  ClientWidth = 1600
+  ClientHeight = 0
+  ClientWidth = 0
   OnActivate = FormActivate
   OnCreate = FormCreate
   OnDestroy = FormDestroy
@@ -14,8 +14,8 @@ object Form1: TForm1
   object Memo1: TMemo
     Left = 0
     Height = 77
-    Top = 760
-    Width = 1600
+    Top = -77
+    Width = 0
     Align = alBottom
     Lines.Strings = (
       'Memo1'
@@ -25,9 +25,9 @@ object Form1: TForm1
   end
   object Chromium1: TChromium
     Left = 0
-    Height = 720
-    Top = 40
-    Width = 1600
+    Height = 0
+    Top = 0
+    Width = 0
     Align = alClient
     TabOrder = 1
     DefaultUrl = 'about:blank'
@@ -36,10 +36,10 @@ object Form1: TForm1
     Left = 0
     Height = 40
     Top = 0
-    Width = 1600
+    Width = 0
     Align = alTop
     ClientHeight = 40
-    ClientWidth = 1600
+    ClientWidth = 0
     TabOrder = 2
     object BitBtn1: TBitBtn
       Left = 1

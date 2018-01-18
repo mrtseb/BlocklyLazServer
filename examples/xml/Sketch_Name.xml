@@ -1,68 +1,73 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="grove_rtc_config" id="Et=v3vg=-Qp%RPs6`eQq" x="107" y="62">
-    <next>
-      <block type="grove_serial_lcd_iic" id="Z:j,=]?LdFHd[%cvtMV7">
-        <value name="TEXT">
-          <block type="text_join" id="I2G4rD2C_n!oes|e}G`:">
-            <mutation items="5"></mutation>
-            <value name="ADD0">
-              <block type="grove_rtc_get" id="Rj6BysFfi0J?7GA#(kt1">
-                <field name="TIMING">J</field>
-              </block>
-            </value>
-            <value name="ADD1">
-              <block type="text" id=".7@}3*x/5.J/|EPg8T6E">
-                <field name="TEXT">/</field>
-              </block>
-            </value>
-            <value name="ADD2">
-              <block type="grove_rtc_get" id="-2#xnw!;VE71du9U,@}S">
-                <field name="TIMING">O</field>
-              </block>
-            </value>
-            <value name="ADD3">
-              <block type="text" id="*U8G2syl;AXRu:A=z,UF">
-                <field name="TEXT">/</field>
-              </block>
-            </value>
-            <value name="ADD4">
-              <block type="grove_rtc_get" id="35roXM}taIf52Xj#OgyS">
-                <field name="TIMING">A</field>
+  <block type="procedures_defnoreturn" id="%b[L%Xxo@l1Z84?5S.F#" x="44" y="23">
+    <field name="NAME">avancer</field>
+    <comment pinned="false" h="80" w="160">Décrire cette fonction…</comment>
+    <statement name="STACK">
+      <block type="io_digitalwrite" id="eJxc0R*IkiJbL;!}1v6F">
+        <field name="PIN">11</field>
+        <value name="STATE">
+          <block type="io_highlow" id="o2{RE)?wP2_FM-thonK%">
+            <field name="STATE">HIGH</field>
+          </block>
+        </value>
+        <next>
+          <block type="io_digitalwrite" id=";6EJu`P=!afS5HpW[C??">
+            <field name="PIN">9</field>
+            <value name="STATE">
+              <block type="io_highlow" id=")%8Z!=[X^J%il[c}]p/?">
+                <field name="STATE">HIGH</field>
               </block>
             </value>
           </block>
-        </value>
-        <value name="TEXT2">
-          <block type="text_join" id=".gkUx7Pe7SG.*;q6U@=8">
-            <mutation items="5"></mutation>
-            <value name="ADD0">
-              <block type="grove_rtc_get" id="5w5=VyaE8W@L:+z/rk?D">
-                <field name="TIMING">J</field>
-              </block>
-            </value>
-            <value name="ADD1">
-              <block type="text" id="I!+mh,wb///X],2ge%yZ">
-                <field name="TEXT">:</field>
-              </block>
-            </value>
-            <value name="ADD2">
-              <block type="grove_rtc_get" id="gJnM:7vVoZ]YH.c5+~p9">
-                <field name="TIMING">O</field>
-              </block>
-            </value>
-            <value name="ADD3">
-              <block type="text" id="(.J,Avb{EE=^_x*02|wg">
-                <field name="TEXT">:</field>
-              </block>
-            </value>
-            <value name="ADD4">
-              <block type="grove_rtc_get" id="Hs-;rP+2OMBLNf{Y1T6F">
-                <field name="TIMING">A</field>
-              </block>
-            </value>
-          </block>
-        </value>
+        </next>
       </block>
-    </next>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="[iPU|Bez1}]w8w(.hv*P" x="47" y="122">
+    <field name="NAME">stopper</field>
+    <comment pinned="false" h="80" w="160">Décrire cette fonction…</comment>
+    <statement name="STACK">
+      <block type="io_digitalwrite" id="lL*fTt6(WgMVrAKx]r=e">
+        <field name="PIN">11</field>
+        <value name="STATE">
+          <block type="io_highlow" id="jg-xGQaCq*m/`,p`k}?+">
+            <field name="STATE">LOW</field>
+          </block>
+        </value>
+        <next>
+          <block type="io_digitalwrite" id="|ulGNASt4M~EvL%A{Xef">
+            <field name="PIN">9</field>
+            <value name="STATE">
+              <block type="io_highlow" id="t4gHnc6!jo4p[:+:f1d@">
+                <field name="STATE">LOW</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="grove_ir_config" id="l}v_OA8M#;LE2jM{j=BM" x="86" y="276">
+    <field name="PORT">2</field>
+    <statement name="DO">
+      <block type="grove_ir_remote" id="iFv/1ASXr.uQyS[j5T7v">
+        <field name="TOUCHE">code_H</field>
+        <statement name="DO">
+          <block type="procedures_callnoreturn" id="BudOXI7v{/DWZTvtu^tU">
+            <mutation name="avancer"></mutation>
+          </block>
+        </statement>
+        <next>
+          <block type="grove_ir_remote" id="4%+Fz{MdQ=bgV7,sVxK{">
+            <field name="TOUCHE">code_B</field>
+            <statement name="DO">
+              <block type="procedures_callnoreturn" id="mEgma{J=!Wq8*hApKtH{">
+                <mutation name="stopper"></mutation>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
   </block>
 </xml>

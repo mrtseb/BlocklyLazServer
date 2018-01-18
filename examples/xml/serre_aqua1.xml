@@ -1,0 +1,138 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="serial_setup" id="Evb*~ElI:ulSFv3}zC/e" x="36" y="14">
+    <field name="SERIAL_ID">Serial</field>
+    <field name="SPEED">9600</field>
+  </block>
+  <block type="grove_relay" id="vM6OA(#bOwN)_H[GL*7C" x="56" y="87">
+    <field name="PIN">2</field>
+    <field name="STAT">HIGH</field>
+    <next>
+      <block type="variables_set" id="_(~j;`ycSn6LwHTBBYw,">
+        <field name="VAR">niveau</field>
+        <value name="VALUE">
+          <block type="variables_set_type" id="UE9tyH0k3Q-to##OF@{k">
+            <field name="VARIABLE_SETTYPE_TYPE">NUMBER</field>
+            <value name="VARIABLE_SETTYPE_INPUT">
+              <block type="io_analogread" id=".^y/Kz}tlZ@^E),{FS=5">
+                <field name="PIN">A0</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="serial_print" id="^]2siic#/u%u*P*}p@BG">
+            <field name="SERIAL_ID">Serial</field>
+            <field name="NEW_LINE">TRUE</field>
+            <value name="CONTENT">
+              <block type="text_join" id="B214a;Pbr5^]`JOBGX1m">
+                <mutation items="3"></mutation>
+                <value name="ADD0">
+                  <block type="variables_get" id="BRKgJJt82,u42w=K)?xd">
+                    <field name="VAR">i</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="cX|,u#gULYV}sW*wGXbh">
+                    <field name="TEXT"> A0:</field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block type="variables_get" id="uYy14QUPX[+KlW@Mvbz.">
+                    <field name="VAR">niveau</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set" id="%}%nR2;Fm.bW1tnruNPs">
+                <field name="VAR">i</field>
+                <value name="VALUE">
+                  <block type="variables_set_type" id="+J{HAhBE}4HTlkq]@qmh">
+                    <field name="VARIABLE_SETTYPE_TYPE">NUMBER</field>
+                    <value name="VARIABLE_SETTYPE_INPUT">
+                      <block type="math_arithmetic" id="f#*sfu`nSCuoVFGkVymX">
+                        <field name="OP">ADD</field>
+                        <value name="A">
+                          <block type="variables_get" id="nH8f2Utq;eL.A`c]tMt+">
+                            <field name="VAR">i</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="(Sa:6dd@NDk,,9)BS`yY">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="controls_if" id="!hT0Z{;uS8Bs?#;GMbWB">
+                    <value name="IF0">
+                      <block type="logic_compare" id="kFbc(?3v*LoH(ld!,gJ8">
+                        <field name="OP">GT</field>
+                        <value name="A">
+                          <block type="variables_get" id="dOE%Nghss2^Hx*oI9tG%">
+                            <field name="VAR">niveau</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="Jg^y4R}d)=2yoU+=RGZb">
+                            <field name="NUM">300</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="grove_relay" id="1^3PJRFt=pdX-QESRJy-">
+                        <field name="PIN">2</field>
+                        <field name="STAT">HIGH</field>
+                        <next>
+                          <block type="time_delay" id=":d@vSxw!juG*|8hkloqF">
+                            <value name="DELAY_TIME_MILI">
+                              <block type="math_number" id="@tL]^bE(nd1.lK`_sk;(">
+                                <field name="NUM">3000</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="grove_relay" id=")n5,h:nU*!*]nm,wlCbv">
+                                <field name="PIN">2</field>
+                                <field name="STAT">LOW</field>
+                                <next>
+                                  <block type="time_delay" id="g#.jAg;{d{F!2[u}CKb~">
+                                    <value name="DELAY_TIME_MILI">
+                                      <block type="math_number" id="=rOhwvJ7jg/w~?W9D_m:">
+                                        <field name="NUM">120000</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="time_delay" id="7Q-:ePx(.jnrkMm[XR1}">
+                        <value name="DELAY_TIME_MILI">
+                          <block type="math_number" id="X~.Rvvp}qgnuf~ET(M}D">
+                            <field name="NUM">500</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="grove_relay" id="3zX%U/U`PN)|S%Ke+;:h" x="86" y="278">
+    <field name="PIN">2</field>
+    <field name="STAT">HIGH</field>
+  </block>
+</xml>

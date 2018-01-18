@@ -1,0 +1,30 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="serial_setup" id="::zKfgq5{^xMf;rTmkif" x="26" y="-311">
+    <field name="SERIAL_ID">Serial</field>
+    <field name="SPEED">9600</field>
+  </block>
+  <block type="serial_print" id="=tfd)(E5=R*Re5B,nNhh" x="22" y="-238">
+    <field name="SERIAL_ID">Serial</field>
+    <field name="NEW_LINE">TRUE</field>
+    <value name="CONTENT">
+      <block type="text_join" id="YMHGBJH:@Mb[Pvt|[;.j">
+        <mutation items="3"></mutation>
+        <value name="ADD0">
+          <block type="text" id="h!ub/b|1UxT5A2;ooG,l">
+            <field name="TEXT">Pa:</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="meteo_patm" id="}}%]%%M,h?BWW.A4h/m5">
+            <field name="MESURE">pression</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="text" id="9i2Sp7d*HLSigYT8K0eK">
+            <field name="TEXT"> Pa.</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+</xml>

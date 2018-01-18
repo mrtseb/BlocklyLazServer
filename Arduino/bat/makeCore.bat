@@ -9,13 +9,81 @@ SET AVR_RANLIB=%prefix%\hardware\tools\avr\bin\avr-ranlib.exe
 SET dir=%prefix%\hardware\arduino\avr
 SET ldir=%prefix%\libraries
 SET ts=%ldir%\TS
+SET ultra=%ldir%\Ultrasonic
 SET mb=%ldir%\makeblock\src
 SET ldir2=%prefix%\hardware\arduino\avr\libraries
-
+SET ir_remote=%ldir%\IRremote
+SET bmp280=%ldir%\BMP280
 ECHO %time%
 DEL %prefix%\core\*.* /q
 
-ECHO "GENERATION DE WIRE_PULSE ASM"1
+ECHO "GENERATION DE ULTRASONIC"
+for %%v in ( %ultra%\*.cpp ) do (
+  ECHO %%v
+  %AVR_CPP% -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10801 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR -I%dir%\cores\arduino -I%ultra% -I%dir%\variants\standard -o %%v.o %%v
+)
+
+for %%v in ( %ultra%\*.o ) do (
+  ECHO %%v  
+  MOVE %%v  ./core/
+)
+
+for %%v in ( %ultra%\*.d ) do (
+  ECHO %%v  
+  MOVE %%v  ./core/
+)
+
+
+ECHO "GENERATION DE IR_REMOTE"
+for %%v in ( %ir_remote%\*.cpp ) do (
+  ECHO %%v
+  %AVR_CPP% -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10801 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR -I%dir%\cores\arduino -I%dir%\variants\standard -o %%v.o %%v
+)
+
+for %%v in ( %ir_remote%\*.o ) do (
+  ECHO %%v  
+  MOVE %%v  ./core/
+)
+
+for %%v in ( %ir_remote%\*.d ) do (
+  ECHO %%v  
+  MOVE %%v  ./core/
+)
+
+ECHO "GENERATION DE SPI"
+for %%v in ( %ldir2%\SPI\src\*.cpp ) do (
+  ECHO %%v
+  %AVR_CPP% -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10801 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR -I%dir%\cores\arduino -I%dir%\variants\standard -I%ldir2%/Wire -I%ldir2%/Wire/utility/ -I%ldir2%/SPI/src -o %%v.o %%v
+)
+
+for %%v in ( %ldir2%\SPI\src\*.o ) do (
+  ECHO %%v  
+  MOVE %%v  ./core/
+)
+
+for %%v in ( %ldir2%\SPI\src\*.d ) do (
+  ECHO %%v  
+  MOVE %%v  ./core/
+)
+
+ECHO "GENERATION DE BMP280"
+for %%v in ( %bmp280%\*.cpp ) do (
+  ECHO %%v
+  %AVR_CPP% -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10801 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR -I%dir%\cores\arduino -I%dir%\variants\standard -I%ldir2%/Wire -I%ldir2%/Wire/utility/ -I%ldir2%/SPI/src -I%bmp280% -o %%v.o %%v
+)
+
+for %%v in ( %bmp280%\*.o ) do (
+  ECHO %%v  
+  MOVE %%v  ./core/
+)
+
+for %%v in ( %bmp280%\*.d ) do (
+  ECHO %%v  
+  MOVE %%v  ./core/
+)
+
+
+ECHO "GENERATION DE WIRE_PULSE ASM"
 %AVR_GCC% -c -g -x assembler-with-cpp -flto -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10801 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR -I%dir%/cores/arduino -I%dir%/variants/standard -o core/wiring_pulse.S.o %dir%\cores\arduino\wiring_pulse.S
 ECHO "COMPILATION DES FICHIERS CORE ARDUINO"
 for %%v in ( %dir%\cores\arduino\*.c ) do (

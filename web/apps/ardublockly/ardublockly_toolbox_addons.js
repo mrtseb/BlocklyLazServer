@@ -17,6 +17,14 @@ Ardublockly.TOOLBOX_ADDITIONAL_XML =
 '    <block type="grove_relay"></block>' +
 '    <block type="grove_dht11"></block>' +
 '    <block type="grove_serial_lcd_iic"></block>' +
+'    <block type="grove_ir_config"></block>' +
+'    <block type="grove_ir_remote"></block>' +
+'    <block type="grove_ultrasonic2"></block>' +
+'  </category>' +
+'  <sep></sep>' +
+'  <sep></sep>' +
+'  <category id="catMeteo" name="Meteo">' +
+'    <block type="meteo_patm"></block>' +
 '  </category>' +
 '  <sep></sep>' +
 '  <category id="catMbot" name="Mbot">' +

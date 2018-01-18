@@ -1,0 +1,66 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="grove_rtc" id="}hsTB(f,5{Ueo-q#XY|E" x="72" y="66">
+    <field name="TIMING">M</field>
+    <value name="TIMES">
+      <block type="math_number" id="{b!1Kl!B0Q78.RY]6Cfm">
+        <field name="NUM">5</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="variables_set" id="5V1NEevxmb@EpmE~9TP8">
+        <field name="VAR">variable</field>
+        <value name="VALUE">
+          <block type="variables_set_type" id="#H,r]i*_:`xU8qQ[;83w">
+            <field name="VARIABLE_SETTYPE_TYPE">NUMBER</field>
+            <value name="VARIABLE_SETTYPE_INPUT">
+              <block type="io_analogread" id="k_Z0|^]j`^K,oj{{CyS#">
+                <field name="PIN">A3</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="controls_whileUntil" id="RuinN7iHk,i}xX5-g+,A">
+            <field name="MODE">WHILE</field>
+            <value name="BOOL">
+              <block type="logic_compare" id="AOK3J)@UfAN%.4.3[E%3">
+                <field name="OP">GT</field>
+                <value name="A">
+                  <block type="variables_get" id="e)(K(Q_HBAEcf=Z%0q4I">
+                    <field name="VAR">variable</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="q?YSA!hnsQF#db[gZx{i">
+                    <field name="NUM">140</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="grove_relay" id="=M896`aoZF:(p.kg_6/b">
+                <field name="PIN">2</field>
+                <field name="STAT">HIGH</field>
+              </block>
+            </statement>
+            <next>
+              <block type="time_delay" id="99m7qpm*F5TU]*KG4e?7">
+                <value name="DELAY_TIME_MILI">
+                  <block type="math_number" id="9QG+%qA]mjX+HM4}P#Dx">
+                    <field name="NUM">1000</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="grove_relay" id="#ZLNOBl~80~~XBiVE*2d">
+                    <field name="PIN">2</field>
+                    <field name="STAT">LOW</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
