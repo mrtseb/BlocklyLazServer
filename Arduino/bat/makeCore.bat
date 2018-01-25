@@ -13,9 +13,59 @@ SET ultra=%ldir%\Ultrasonic
 SET mb=%ldir%\makeblock\src
 SET ldir2=%prefix%\hardware\arduino\avr\libraries
 SET ir_remote=%ldir%\IRremote
+SET ethernet=%ldir%\Ethernet\src
 SET bmp280=%ldir%\BMP280
 ECHO %time%
 DEL %prefix%\core\*.* /q
+
+ECHO "GENERATION DE SPI"
+for %%v in ( %ldir2%\SPI\src\*.cpp ) do (
+  ECHO %%v
+  %AVR_CPP% -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10801 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR -I%dir%\cores\arduino -I%dir%\variants\standard -I%ldir2%/Wire -I%ldir2%/Wire/utility/ -I%ldir2%/SPI/src -o %%v.o %%v
+)
+
+for %%v in ( %ldir2%\SPI\src\*.o ) do (
+  ECHO %%v  
+  MOVE %%v  ./core/
+)
+
+for %%v in ( %ldir2%\SPI\src\*.d ) do (
+  ECHO %%v  
+  MOVE %%v  ./core/
+)
+
+ECHO "GENERATION DE ETHERNET UTILITY"
+for %%v in ( %ethernet%\utility\*.cpp ) do (
+  ECHO %%v
+  %AVR_CPP% -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10801 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR -I%dir%\cores\arduino -I%ultra% -I%dir%\variants\standard -I%ldir2%/SPI/src -I%ethernet% -I%ethernet%/utility -o %%v.o %%v
+)
+
+for %%v in ( %ethernet%\utility\*.o ) do (
+  ECHO %%v  
+  MOVE %%v  ./core/
+)
+
+for %%v in ( %ethernet%\utility\*.d ) do (
+  ECHO %%v  
+  MOVE %%v  ./core/
+)
+
+
+ECHO "GENERATION DE ETHERNET"
+for %%v in ( %ethernet%\*.cpp ) do (
+  ECHO %%v
+  %AVR_CPP% -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10801 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR -I%dir%\cores\arduino -I%ultra% -I%dir%\variants\standard -I%ldir2%/SPI/src -I%ethernet% -I%ethernet%/utility -o %%v.o %%v
+)
+
+for %%v in ( %ethernet%\*.o ) do (
+  ECHO %%v  
+  MOVE %%v  ./core/
+)
+
+for %%v in ( %ethernet%\*.d ) do (
+  ECHO %%v  
+  MOVE %%v  ./core/
+)
 
 ECHO "GENERATION DE ULTRASONIC"
 for %%v in ( %ultra%\*.cpp ) do (
@@ -50,21 +100,7 @@ for %%v in ( %ir_remote%\*.d ) do (
   MOVE %%v  ./core/
 )
 
-ECHO "GENERATION DE SPI"
-for %%v in ( %ldir2%\SPI\src\*.cpp ) do (
-  ECHO %%v
-  %AVR_CPP% -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10801 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR -I%dir%\cores\arduino -I%dir%\variants\standard -I%ldir2%/Wire -I%ldir2%/Wire/utility/ -I%ldir2%/SPI/src -o %%v.o %%v
-)
 
-for %%v in ( %ldir2%\SPI\src\*.o ) do (
-  ECHO %%v  
-  MOVE %%v  ./core/
-)
-
-for %%v in ( %ldir2%\SPI\src\*.d ) do (
-  ECHO %%v  
-  MOVE %%v  ./core/
-)
 
 ECHO "GENERATION DE BMP280"
 for %%v in ( %bmp280%\*.cpp ) do (

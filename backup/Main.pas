@@ -218,6 +218,7 @@ begin
   CefLocale := UTF8Decode(FallbackLang);
   self.BitBtn1Click(self);
   self.cmbCard.itemindex:=0;
+  self.Fbaud:='115200';
 end;
 
 procedure TForm1.BitBtn1Click(Sender: TObject);
